@@ -73,7 +73,7 @@ while True:
         fruit = input("Nhập tên trái cây: ")
         price = input("Nhập giá: ")
         add_fruit(fruit, price)
-    elif choice == "2":
+    elif choice == "3":
         print("Chương trình đã kết thúc")
         break
     else:
