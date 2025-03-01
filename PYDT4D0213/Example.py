@@ -1,3 +1,4 @@
+
 class Dog:          #class = lớp
     leg = 4                               #attribute = thuộc tính
     breed = 'puddle'

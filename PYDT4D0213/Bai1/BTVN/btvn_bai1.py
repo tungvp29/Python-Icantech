@@ -52,24 +52,24 @@ class Student:
         print(f'Xếp hạng: {self.xephang()}')
         print('-'*20)
     
+if __name__ == '__main__':
+    #tạo đối tượng
+    std1 = Student()
+    std1.name = 'Nguyễn Văn A'
+    std1.group = '10A1'
+    std1.scores = {'toán': 10, 'lý': 9, 'hóa': 8}
 
-#tạo đối tượng
-std1 = Student()
-std1.name = 'Nguyễn Văn A'
-std1.group = '10A1'
-std1.scores = {'toán': 10, 'lý': 9, 'hóa': 8}
+    std2 = Student()
+    std2.name = 'Trần Thị B'
+    std2.group = '9B2'
+    std2.scores = {'toán': 7, 'văn': 7, 'anh': 4}
 
-std2 = Student()
-std2.name = 'Trần Thị B'
-std2.group = '9B2'
-std2.scores = {'toán': 7, 'văn': 7, 'anh': 4}
+    std3 = Student()
+    std3.name = 'Lê Văn C'
+    std3.group = '11C3'
+    std3.scores = {'văn': 9, 'sửa': 9, 'địa': 9}
 
-std3 = Student()
-std3.name = 'Lê Văn C'
-std3.group = '11C3'
-std3.scores = {'văn': 9, 'sửa': 9, 'địa': 9}
-
-#danh sách sinh viên
-danh_sach_sinh_vien = [std1, std2, std3]
-for std in danh_sach_sinh_vien:
-    std.inthongtin()
+    #danh sách sinh viên
+    danh_sach_sinh_vien = [std1, std2, std3]
+    for std in danh_sach_sinh_vien:
+        std.inthongtin()
