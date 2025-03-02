@@ -25,18 +25,18 @@ def binary_search(arr, target):
             high = mid - 1
     return None, step
 
-n = int(input("Nhập số phần tử: "))
-arr = []
-for i in range(n):
-    arr.append(random.randint(0, 10000))
+# n = int(input("Nhập số phần tử: "))
+arr = [5,4,3,2,1]
+# for i in range(n):
+#     arr.append(random.randint(0, 10000))
 
-arr.sort()
+# arr.sort()
 
 # print(f'Danh sách {n} phần tử ngẫu nhiên ban đầu: \n{arr}')
 target = int(input("Nhập số cần tìm: "))
 
-vitri, sobuoc = sequential_search(arr, target)
+# vitri, sobuoc = sequential_search(arr, target)
 vitri2, sobuoc2 = binary_search(arr, target)
 
-print(f'Với thuật toán tuần tự, vị trí của phần tử {target} trong mảng là {vitri} sau {sobuoc} bước')
+# print(f'Với thuật toán tuần tự, vị trí của phần tử {target} trong mảng là {vitri} sau {sobuoc} bước')
 print(f'Với thuật toán tìm kiếm nhị phân, vị trí của phần tử {target} trong mảng là {vitri2} sau {sobuoc2} bước')

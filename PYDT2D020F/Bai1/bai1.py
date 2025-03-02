@@ -1,5 +1,10 @@
+
 #mở file
-f = open('tracnghiem.txt', 'r', encoding='utf-8')
+f = open('tracnghiem.txt', 'x')
+#r = read   mở file để đọc
+#w = write  xóa nội dung cũ và ghi mới, nếu file chưa có thì tạo mới
+#a = append ghi thêm nội dung vào cuối file
+#x = create tạo file mới, báo lỗi nếu file đã tồn tại
 
 #đọc nội dung
 list = f.readlines()

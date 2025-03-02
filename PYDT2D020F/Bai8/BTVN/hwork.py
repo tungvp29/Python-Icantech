@@ -15,6 +15,15 @@ def insertion_sort(lst, value_index=1):    #sắp xếp chèn
         lst[pos + 1] = x
     return lst
 
+ds = [
+    #(0,  1)
+    ('A', 10),
+    ('B', 5),
+    ('C', 8),
+    ('D', 3),
+    ('E', 7)
+]
+
 def in_danh_sach(lst):
     for i in range(len(lst)):
         print(f'{i+1}. {lst[i][0]}: {lst[i][1]}')
@@ -33,6 +42,6 @@ in_danh_sach(arr)
 # sắp xếp theo điểm giảm dần:
 arr_sort = arr.copy()
 # bubble_sort(arr_sort)
-insertion_sort(arr_sort, 0)
+insertion_sort(arr_sort, 1)
 print('Bảng xếp hạng sau khi sắp xếp:')
 in_danh_sach(arr_sort)
