@@ -37,6 +37,8 @@ def calculate_price(fruit, weight, money):
     except ValueError:
         print("Số kg không phù hợp")
         return None
+    except:
+        print(f"Lỗi: ")
 
 def add_fruit(fruit, price):
     try:
