@@ -14,16 +14,40 @@ TinhCach = {
 }
 
 class Personality:
-    def __init__(self, name, description):
+    def __init__(self, name, description, img):
         self.name = name
         self.description = description
         self.title = 'Con vật bạn chọn là ' + name
+        self.image = img
 
-conmeo = Personality('Con mèo', 'Lựa chọn này cho thấy bạn chưa sẵn sàng bắt đầu công việc, khao khát được đi nghỉ')
-concho = Personality('Con chó', 'Bạn cảm nhận được sự hỗ trợ nhiệt tình của bạn bè và vì thế nên sẵn sàng giải quyết mọi vấn đề')
-consutu = Personality('Con sư tử', 'Có thể thấy bạn là người có vẻ ngoài nổi bật. Bạn thu hút mọi người bằng vẻ hào nhoáng')
-conngua = Personality('Con ngựa', 'Có điều gì đó đang hạn chế sự tự do của bạn')
-conthienga = Personality('Con thiên nga', 'Hiện tại bạn có khoảng thời gian ngọt ngào, hãy cố gắng tận hưởng và kéodài nó nhé')
+conmeo = Personality(
+    'Con mèo', 
+    'Lựa chọn này cho thấy bạn chưa sẵn sàng bắt đầu công việc, khao khát được đi nghỉ',
+    'https://static.toiimg.com/photo/msid-67586673/67586673.jpg?resizemode=4&width=400'
+    )
+
+concho = Personality(
+    'Con chó', 
+    'Bạn cảm nhận được sự hỗ trợ nhiệt tình của bạn bè và vì thế nên sẵn sàng giải quyết mọi vấn đề',
+    'https://hips.hearstapps.com/hmg-prod/images/happy-dog-outdoors-royalty-free-image-1652927740.jpg?crop=0.447xw:1.00xh;0.187xw,0&resize=980')
+
+consutu = Personality(
+    'Con sư tử', 
+    'Có thể thấy bạn là người có vẻ ngoài nổi bật. Bạn thu hút mọi người bằng vẻ hào nhoáng',
+    'https://www.akronzoo.org/sites/default/files/styles/square_large/public/assets/animals/Lion-Donovan.png?h=00546c34&itok=-9dhFwI5')
+
+conngua = Personality(
+    'Con ngựa', 
+    'Có điều gì đó đang hạn chế sự tự do của bạn',
+    'https://www.horseridingnow.com.au/wp-content/uploads/2024/07/shutterstock_153831563-scaled.jpg'
+    )
+
+conthienga = Personality(
+    'Con thiên nga', 
+    'Hiện tại bạn có khoảng thời gian ngọt ngào, hãy cố gắng tận hưởng và kéodài nó nhé',
+    'https://www.acfc.com.vn/acfc_wp/wp-content/uploads/2024/07/image-9-1024x620.webp'
+    )
+    
 
 with col1:
     button1 = st.button(conmeo.name)
@@ -39,18 +63,23 @@ with col5:
 if button1:
     with st.expander(conmeo.name):
         st.write(conmeo.description)
+        st.image(conmeo.image)
 if button2:
     with st.expander(concho.name):
         st.write(concho.description)
+        st.image(concho.image)
 if button3:
     with st.expander(consutu.name):
         st.write(consutu.description)
+        st.image(consutu.image)
 if button4:
     with st.expander(conngua.name):
         st.write(conngua.description)
+        st.image(conngua.image)
 if button5:
     with st.expander(conthienga.name):
         st.write(conthienga.description)
+        st.image(conthienga.image)
 
 with st.sidebar:
     st.title('Trắc nghiệm tính cách')
