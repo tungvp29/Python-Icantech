@@ -1,0 +1,4 @@
+Toán học:20
+Văn học:30
+Vật lý:15
+Sinh học: 25
