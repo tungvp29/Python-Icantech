@@ -63,3 +63,8 @@ game1 = Game('xúc xắc')
 game1.play(5)
 game2 = Game('đồng xu')
 game2.play(3)
+
+
+print(game1.quantity())        #lấy dữ liệu ra => getter
+game1.quantity = 5        #thay đổi dữ liệu => setter
+del game1.quantity        #xóa dữ liệu => deleter
