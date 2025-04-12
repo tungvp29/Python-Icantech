@@ -55,7 +55,8 @@ with col5:
 if button1:
     with st.expander(conmeo.name):
         st.write(conmeo.description)       
-        st.image(conmeo.image)
+        # st.image(image = conmeo.image, caption="con mèo")
+        st.image(conmeo.image, "con mèo")
         st.audio('https://github.com/rafaelreis-hotmart/Audio-Sample-files/raw/master/sample.mp3')
 
         st.video('https://www.youtube.com/watch?v=C1rK2-FJWrA', format='video/mp4')
