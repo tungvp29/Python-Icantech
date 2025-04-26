@@ -26,6 +26,7 @@ pygame.draw.circle(screen, BLUE, (200, 200), 50, 1) #vẽ hình tròn màu xanh
 
 pygame.draw.polygon(screen, YELLOW, [(300, 300), (400, 400), (500, 300), (400, 200)]) #vẽ hình đa giác màu vàng
 pygame.draw.lines(screen, GRAY, True, [(300, 300), (400, 400), (500, 300), (400, 200)], 10) #vẽ đường thẳng màu đỏ
+pygame.draw.line(screen, GRAY, (300, 300), (400, 400), 10) #vẽ đường thẳng màu đỏ
 
 pygame.display.update()
 # đặt câu lệnh vẽ sau update
