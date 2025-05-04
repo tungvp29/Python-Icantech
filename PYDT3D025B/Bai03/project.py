@@ -35,6 +35,11 @@ def randomFood():
     foodY = randFoodY - surplusFoodY
     return foodX, foodY
 
+def drawGraphic(x, y):
+    head_skin = pygame.image.load(f'Graphics/head_{head_direction}.png').convert()
+    head_skin = pygame.transform.scale(head_skin, (snake_block, snake_block))
+    screen.blit(head_skin, (x, y))
+
 foodX, foodY = randomFood()
 
 snake_list = []
@@ -50,6 +55,9 @@ def show_snake(snake_list):
             # screen.blit(head_skin, (x[0], x[1]))
         else:
             pygame.draw.rect(screen, GREEN, (x[0], x[1], snake_block, snake_block))
+            # body_skin = pygame.image.load('Graphics/body_horizontal.png').convert()
+            # body_skin = pygame.transform.scale(body_skin, (snake_block, snake_block))
+            # screen.blit(body_skin, (x[0], x[1]))
 
 while True:
     for event in pygame.event.get():
@@ -104,4 +112,4 @@ while True:
     # text = font.render("Score:"+ str(snake_length), 1, (0, 0, 0))
     # screen.blit(text, (10, 10)) 
     pygame.display.update()
-    clock.tick(12)  # Tốc độ di chuyển của rắn
+    clock.tick(4)  # Tốc độ di chuyển của rắn
