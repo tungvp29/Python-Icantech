@@ -56,3 +56,5 @@ input_string=input("Please fill the information of the student:")
 std1=Student.from_strings(input_string)
 std1.information()
 
+std2 = Student("Nguyen Van A", 8, 9, 10)
+
