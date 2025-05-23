@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "ggsheet-fruit",
+  "private_key_id": "78a2d075dde03ffc389b8fa4da31104b9f67955e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCcxk6kBpIM+7zW\nEnrmuWt37+QGONidfkWePJEY0bA072OgxzDPAY2y45pYuUrKRuWca8qWXnA9slsA\naKcf5omu+ud85mIC5Z7QIxmokOTTtkJRB3wlBIMbeU7Te/FVkogT7zLSctn/wqKV\nZ2INmTk+qbwgeMTpAe93R3FVoC4rq2peB6QQwbFap9tQ6NSvS+rDAeCcWmxVcXve\nrUbJTM7hbAcfLHYyFWiiAlQ0+onG7HBH5pNbKOiFuJ7Qtwws5TlwHwrUIBGiaaHI\nen6Kg6PpTYGTSvgSCMiBwLJcaxxStgWSTcGobQ6XxIWrmNAlfAfXJOfVrJ1DRu8Z\nOJcWuzvVAgMBAAECggEAAP0MiAeC3KkYPsfdMPEVD+J1iquk8W1FCKxzOy6dkLtO\nhyXFzF4MWr3kx3RJ6jeVgS2ez07nRPssZ9tTWdyj5XRT9ptIZsa0AEhiqKxa6raG\ni82Hx1qLJMshgwhG9FYZHIw1MJxbM6mybgSVNi+865cnYbgspRcr0bZarRS/ilkU\nlsN0gMoGFqtK7bC8a7HsugUKApbbFHbCmczdWGUfa6b/GiM4YI/kG/a9BmGANo25\nghKRpv+CSEzVY84EKQVaLs6sGVVMUl8llYPn/uUp9ONcFW+D5eXziiyb78ha9OGS\nSBTxikMNy6LarOb2vArfqyqAzad+gRYyloWiAKI4qwKBgQDYS56mO7g1RUZhthoY\nf0HAhEUmAf2/Q4iX3zgMxSEoQVt1xkveWImHLHoROXCnCeGcgfnfipMZnFNohPdL\nK2bWJudmKBCwvHiD71sjRt2ZbIva7ee8dVz0mkMm4dXhX/zrxGBSoB5kTpxO4J8s\njkqVFouZ4rJ1orJnFatjJapzSwKBgQC5jaAvpExtAbfAPfPh7vOlFHG/NtU/WOau\noudDafiFWqPQltoq27nAtrjQQDPNBWOl1QLdxM17IKOUKHMWFIO0Y+ceJDmLJH1s\nj6tokxI9ybFAMiMrg3PBED49TsTrPGLL3pqbM6kgMGpxn1g1y+tPahFKqloKPOMl\n5y6IKnR5XwKBgHpBS9wj9zvM+zoxhtB/5XdejAMurvFTx7ooBnNZXSN2xa5tNebo\nXlvULO7da6pOsIIZCVZr6jdYn+B8/5YyYv76oGKilMSA0xGn0fi/jnOw4eAOBqUE\nJVVweDJbBdxMuBW/Or6ZGHST5k/DMNUrXEampqOFel95ZaNUoTn6STy/AoGAf4SM\nNJGWEEfg7xXkeD3OZYGyVjWpwbon9pZvlo3KRGMxN1Wko1WTx5QLWNr2foyYmcvV\nB3GLwXWB1X0i8mawyJTrrXQ5s50lMSlfJCQGoj3tOW/7aZkSQPkXvOxYOk2qm+7k\nk4qiTUPYszNN3NLCaTY8ofKGpIiJlm/VM7DxkMMCgYAM05GekXmqHBQhb/0YRVIT\nJkSw1boSa52x0WTfBNor/Lfxu7/RJI1eoeb7UKBMXR+iOkWlq4fLnVQvovHSU4Ma\nswKVDS3XB1WOOVmKLBqtaoxKML5iNXkjtESEPsMCJGyl9q6JT61Q2Opv0uWVF5DQ\naEt6OrnKgU8RWjZG25EKeg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "ggsheet-fruit@ggsheet-fruit.iam.gserviceaccount.com",
+  "client_id": "106241057947824493886",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ggsheet-fruit%40ggsheet-fruit.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
