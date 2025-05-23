@@ -1,4 +1,5 @@
 import streamlit as st
+import json
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
@@ -10,9 +11,9 @@ def send_to_google_sheet(data_dict):
         "https://www.googleapis.com/auth/drive.file",
         "https://www.googleapis.com/auth/drive"
     ] 
-    creds = ServiceAccountCredentials.from_json_keyfile_name(
-        "ggsheet-fruit-78a2d075dde0.json", scope
-    )
+    creds_dict = json.loads(st.secrets["GOOGLE_SHEET_CREDS"])
+
+    creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
     client = gspread.authorize(creds)
 
     # Mở file Google Sheet (đảm bảo file này tồn tại và được chia sẻ quyền edit)
