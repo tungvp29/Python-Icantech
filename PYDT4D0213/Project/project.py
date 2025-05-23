@@ -13,11 +13,14 @@ def send_to_google_sheet(data_dict):
     ] 
     creds_dict = json.loads(st.secrets["GOOGLE_SHEET_CREDS"])
 
+    # creds = ServiceAccountCredentials.from_json_keyfile_name(
+    #     "ggsheet-fruit-78a2d075dde0.json", scope
+    # )
     creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict, scope)
     client = gspread.authorize(creds)
 
     # Mở file Google Sheet (đảm bảo file này tồn tại và được chia sẻ quyền edit)
-    sheet = client.open("Đặt sinh tố").worksheet("sheet1")  # <--- Thay tên file tại đây nếu khác
+    sheet = client.open("DatSinhTo").worksheet("sheet1")  # <--- Thay tên file tại đây nếu khác
     sheet.append_row(list(data_dict.values()))
 
 # Giao diện Streamlit
