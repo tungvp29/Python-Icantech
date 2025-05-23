@@ -16,7 +16,7 @@ def send_to_google_sheet(data_dict):
     client = gspread.authorize(creds)
 
     # Mở file Google Sheet (đảm bảo file này tồn tại và được chia sẻ quyền edit)
-    sheet = client.open("VuongQuocMoHinh").sheet1  # <--- Thay tên file tại đây nếu khác
+    sheet = client.open("Đặt sinh tố").worksheet("sheet1")  # <--- Thay tên file tại đây nếu khác
     sheet.append_row(list(data_dict.values()))
 
 # Giao diện Streamlit
