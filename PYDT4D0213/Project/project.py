@@ -20,7 +20,8 @@ def send_to_google_sheet(data_dict):
     client = gspread.authorize(creds)
 
     # Mở file Google Sheet (đảm bảo file này tồn tại và được chia sẻ quyền edit)
-    sheet = client.open("DatSinhTo").worksheet("sheet1")  # <--- Thay tên file tại đây nếu khác
+    # sheet = client.open("DatSinhTo").worksheet("sheet1")  # <--- Thay tên file tại đây nếu khác
+    sheet = client.open_by_url("https://docs.google.com/spreadsheets/d/1ZjRzms5XhLUyCuPE_x3SSQ6y7CgWoT0TZmWPJBTZ0Lc/edit?gid=568338065#gid=568338065").worksheet("sheet1")
     sheet.append_row(list(data_dict.values()))
 
 # Giao diện Streamlit
