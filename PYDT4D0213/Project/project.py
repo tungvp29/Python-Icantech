@@ -9,7 +9,7 @@ def send_to_google_sheet(data_dict):
         "https://www.googleapis.com/auth/spreadsheets",
         "https://www.googleapis.com/auth/drive.file",
         "https://www.googleapis.com/auth/drive"
-    ]
+    ] 
     creds = ServiceAccountCredentials.from_json_keyfile_name(
         "ggsheet-fruit-78a2d075dde0.json", scope
     )
