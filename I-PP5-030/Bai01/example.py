@@ -11,6 +11,7 @@ dict = { 'STT': [1, 2, 3],
         'gioitinh': [True, False, True] }
 
 df = pd.DataFrame(dict)
+print(df.info())
 # print(df)
 # print('-------------------')
 # dong1 = df.loc[0]
@@ -20,8 +21,8 @@ df = pd.DataFrame(dict)
 # print(dong13)
 
 df2 = pd.DataFrame(dict, index=['Hs1', 'Hs2', 'Hs3'])
-# print(df2)
-pd.options.display.max_rows = 100
+print(df2.loc['Hs1'])
+pd.options.display.max_rows = 4
 df3 = pd.read_csv('Cars.csv')
 print(df3)
 print(df3.info())
