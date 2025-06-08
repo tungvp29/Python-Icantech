@@ -1,61 +1,80 @@
 import pandas as pd
 import streamlit as st
 
-# data = [{'Rank': 1,'Score': 28},
-#         {'Rank': 2,'Score': 55},
-#         {'Rank': 3,'Score': 43},
-#         {'Rank': 4,'Score': 19},
-#         {'Rank': 5,'Score': 87}]
+data = pd.read_csv('data/movies.csv')
+print(data)
 
-data = pd.read_csv('score.csv')
-chart_data = pd.DataFrame(data)
-print(chart_data)
-st.vega_lite_chart(chart_data, {
+# st.line_chart(data, x='Hours', y='Scores')
+
+# st.area_chart(data, x='Hours', y='Scores')
+
+# st.bar_chart(data, x='Hours', y='Scores')
+
+st.vega_lite_chart(data, {
     'layer': [
         {
-            'transform': [
-                {'sample': 10}
+            'transform':[
+               { 'sample': 50}
             ],
-            'mark': {'type': 'point', 
-                     'filled': True, 
-                     'size': 500,},
+            'mark': {
+                'type': 'point',
+                'filled': True,
+            },
             'encoding': {
-                'x': {'field': 'Hours', 'type': 'nominal'},
-                'y': {'field': 'Scores', 'type': 'quantitative'}
+                'x': {
+                    'field': 'Rotten Tomatoes Rating', 
+                    'type': 'quantitative'
+                },
+                'y': {
+                    'field': 'IMDB Rating', 
+                    'type': 'quantitative'
+                }
             }
         },
         {
-            'mark': {
-                'type': 'line',
-                'color': 'firebrick',
-                'point': True
-            },
             'transform': [
                 {
-                    'loess': 'Hours',
-                    'on': 'Scores'
+                    'loess': 'IMDB Rating',
+                    'on': 'Rotten Tomatoes Rating',
                 }
             ],
+            'mark': {
+                'type': 'line',
+                'color': 'red',
+            },
             'encoding': {
-                'x': {'field': 'Hours', 'type': 'quantitative'},
-                'y': {'field': 'Scores', 'type': 'quantitative'}
+                'x': {
+                    'field': 'Rotten Tomatoes Rating', 
+                    'type': 'quantitative'
+                },
+                'y': {
+                    'field': 'IMDB Rating', 
+                    'type': 'quantitative'
+                }
             }
         },
         {
-            'mark': {
-                'type': 'line',
-                'color': 'steelblue',
-            },
             'transform': [
                 {
-                    'regression': 'Hours',
-                    'on': 'Scores'
+                    'regression': 'IMDB Rating',
+                    'on': 'Rotten Tomatoes Rating',
                 }
             ],
+            'mark': {
+                'type': 'line',
+                'color': 'green',
+            },
             'encoding': {
-                'x': {'field': 'Hours', 'type': 'quantitative'},
-                'y': {'field': 'Scores', 'type': 'quantitative'}
+                'x': {
+                    'field': 'Rotten Tomatoes Rating', 
+                    'type': 'quantitative'
+                },
+                'y': {
+                    'field': 'IMDB Rating', 
+                    'type': 'quantitative'
+                }
             }
         }
     ]
+
 })

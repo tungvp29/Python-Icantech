@@ -1,19 +1,22 @@
 import pandas as pd
 import streamlit as st
 
-data = pd.read_csv('pyramid.csv')
-chart_data = pd.DataFrame(data)
-print(chart_data)
-st.vega_lite_chart(chart_data, {    
-    'mark': {'type': 'arc'},
+data = pd.read_csv('Data/pyramid.csv')
+
+st.vega_lite_chart(data, {
+    'mark': {
+        'type': 'arc'
+    },
     'encoding': {
         'theta': {
-            'field': 'value',
-            'type': 'quantitative',
-            'scale': {'range': [2.356, 8.639]},
+            'field': 'value',           #cột value
+            'type': 'quantitative',     #dạng số
+            'scale': {
+                'range': [3.856, 10.139]
+            }
         },
         'color': {
-            'field': 'category', 
+            'field': 'category',
             'type': 'nominal',
             'scale': {
                 'domain': ['Bầu trời', 'Mặt tối', 'Mặt sáng'],
@@ -21,11 +24,8 @@ st.vega_lite_chart(chart_data, {
             },
             'legend': {
                 'orient': 'right',
-                'title': 'Chú thích màu sắc',
-            }
+                'title': 'Chú thích màu sắc'
+            } 
         },
-        'order': {
-            'field': 'order',
-        }
     }
 })

@@ -22,7 +22,7 @@ pygame.init()
 screen = pygame.display.set_mode((screenWidth, screenHeight))
 pygame.display.set_caption('Game đua xe')
 
-def get_asset_path(folder, filename):
+def get_asset_path(filename):
     if hasattr(sys, '_MEIPASS'):
         # Running in a PyInstaller bundle
         return os.path.join(sys._MEIPASS, 'assets', filename)
