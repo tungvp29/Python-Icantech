@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-data1 = pd.read_csv('score.csv')
+data1 = pd.read_csv('score.csv')   #dataframe
 # print(data)
 data = [['a', 'b', 'c', 'd'],
         ['e', 'f', 'g', 'h'],
@@ -9,6 +9,12 @@ data = [['a', 'b', 'c', 'd'],
         ['m', 'n', 'o', 'p']]
 
 st.title('Điểm học sinh:')
+
+st.write('Câu lệnh write() hiển thị dữ liệu dưới dạng văn bản')
 st.write(data)
+
+st.write('Câu lệnh table() hiển thị dữ liệu dưới dạng bảng')
 st.table(data)
+
+st.write('Câu lệnh dataframe() hiển thị dữ liệu dưới dạng bảng có thể tương tác')
 st.dataframe(data)

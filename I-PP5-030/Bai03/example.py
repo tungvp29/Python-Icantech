@@ -4,11 +4,11 @@ import streamlit as st
 data = pd.read_csv('data/movies.csv')
 print(data)
 
-# st.line_chart(data, x='Hours', y='Scores')
+st.line_chart(data, x='Hours', y='Scores')
 
-# st.area_chart(data, x='Hours', y='Scores')
+st.area_chart(data, x='Hours', y='Scores')
 
-# st.bar_chart(data, x='Hours', y='Scores')
+st.bar_chart(data, x='Hours', y='Scores')
 
 st.vega_lite_chart(data, {
     'layer': [

@@ -12,7 +12,7 @@ st.vega_lite_chart(data, {
             'field': 'value',           #cột value
             'type': 'quantitative',     #dạng số
             'scale': {
-                'range': [3.856, 10.139]
+                'range': [1.856, 8.139]
             }
         },
         'color': {
