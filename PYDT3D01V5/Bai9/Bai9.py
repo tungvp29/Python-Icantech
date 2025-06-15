@@ -122,10 +122,10 @@ def HandleEvents():
         playerPos[0] -= playerSpeed
     if keys[pygame.K_RIGHT] and playerPos[0] < screenWidth - playerSize:
         playerPos[0] += playerSpeed
-    # if keys[pygame.K_UP] and playerPos[1] > 0:
-    #     playerPos[1] -= playerSpeed
-    # if keys[pygame.K_DOWN] and playerPos[1] < screenHeight - playerSize:
-    #     playerPos[1] += playerSpeed
+    if keys[pygame.K_UP] and playerPos[1] > 0:
+        playerPos[1] -= playerSpeed
+    if keys[pygame.K_DOWN] and playerPos[1] < screenHeight - playerSize:
+        playerPos[1] += playerSpeed
     return False
 
 #Vòng lặp game
