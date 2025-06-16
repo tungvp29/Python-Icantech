@@ -30,7 +30,7 @@ class Student:
             return 'Trung bình'
         else:
             return 'Yếu'
-    
+    @property
     def showInfoStudent(self):
         print('Tên học sinh: ', self.name)
         
