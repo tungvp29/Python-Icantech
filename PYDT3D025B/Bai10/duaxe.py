@@ -1,4 +1,4 @@
-import pygame, sys, random
+import pygame, sys, random, os
 
 pygame.init()
 
@@ -22,9 +22,20 @@ enemy_size_x = 50
 enemy_size_y = 90
 enemy_speed = 0.2
 enemy_count = 5
-player_car = pygame.image.load("assets/car-blue.png")
+
+def get_asset_path(filename):
+    if hasattr(sys, '_MEIPASS'):
+        # Running in a PyInstaller bundle
+        return os.path.join(sys._MEIPASS, 'assets', filename)
+    else:
+        # Running in a development environment
+        return os.path.join('assets', filename)
+# player_car = pygame.image.load("assets/car-blue.png")
+player_car = pygame.image.load(get_asset_path("car-blue.png"))
 player_car = pygame.transform.flip(player_car, False, True)
-enemy_car = pygame.image.load("assets/car-red.png")
+# enemy_car = pygame.image.load("assets/car-red.png")
+enemy_car = pygame.image.load(get_asset_path("car-red.png"))
+    
 clock = pygame.time.Clock()
 
 screen = pygame.display.set_mode((screen_width, screen_height))
