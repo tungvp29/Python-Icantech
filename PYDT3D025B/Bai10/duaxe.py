@@ -30,6 +30,7 @@ def get_asset_path(filename):
     else:
         # Running in a development environment
         return os.path.join('assets', filename)
+print(pygame.image.get_extended())
 # player_car = pygame.image.load("assets/car-blue.png")
 player_car = pygame.image.load(get_asset_path("car-blue.png"))
 player_car = pygame.transform.flip(player_car, False, True)
