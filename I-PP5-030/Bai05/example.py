@@ -3,9 +3,10 @@ import streamlit as st
 import random as rd
 
 data = pd.read_csv('pydc5_5.csv')
-print(data)
+# print(data)
 st.write('Dữ liệu gốc')
 st.dataframe(data)
+st.write(data.shape)
 
 st.write('Dữ liệu đã sao chép')
 data_copy = data.copy()
@@ -13,11 +14,12 @@ new_row = {'Tên': 'Hoàng', 'Toán': 6, 'Văn': 5}
 data_copy = data_copy._append(new_row, ignore_index=True, verify_integrity=True)
 # st.dataframe(data_copy)
 
-st.write(data_copy.shape)
 data_copy.insert(loc=3, column='Anh', value=[rd.randint(1, 10) for _ in range(data_copy.shape[0])])
 data_copy.insert(loc=4, column='Tổng', value= data_copy.sum(axis=1, numeric_only=True))
 st.dataframe(data_copy)
+st.write(data_copy.shape)
 
+st.write('Điểm thấp nhất ở các môn:')
 
 st.write(data_copy.min(numeric_only=True))
 
