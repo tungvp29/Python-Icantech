@@ -1,7 +1,9 @@
 import pandas as pd
 import streamlit as st
+import random as rd
 
 data = pd.read_csv('pydc5_5.csv')
+print(data)
 st.write('Dữ liệu gốc')
 st.dataframe(data)
 
@@ -11,11 +13,11 @@ new_row = {'Tên': 'Hoàng', 'Toán': 6, 'Văn': 5}
 data_copy = data_copy._append(new_row, ignore_index=True, verify_integrity=True)
 # st.dataframe(data_copy)
 
-data_copy.insert(loc=3, column='Anh', value=[1,2,3])
+st.write(data_copy.shape)
+data_copy.insert(loc=3, column='Anh', value=[rd.randint(1, 10) for _ in range(data_copy.shape[0])])
 data_copy.insert(loc=4, column='Tổng', value= data_copy.sum(axis=1, numeric_only=True))
 st.dataframe(data_copy)
 
-st.write(data_copy.shape[1])
 
 st.write(data_copy.min(numeric_only=True))
 

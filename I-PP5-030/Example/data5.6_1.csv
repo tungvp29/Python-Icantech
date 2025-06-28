@@ -1,0 +1,1001 @@
+gender,race/ethnicity,parental level of education,lunch,test preparation course,math score
+female,3.0,some college,standard,completed,59.0
+male,4.0,associate's degree,standard,none,96.0
+female,2.0,some college,free/reduced,none,57.0
+male,0.0,some college,,none,
+female,4.0,associate's degree,standard,none,83.0
+male,,some high school,standard,none,68.0
+female,3.0,associate's degree,,none,82.0
+female,0.0,some high school,standard,none,46.0
+male,2.0,some high school,standard,none,80.0
+female,3.0,bachelor's degree,standard,completed,57.0
+,4.0,some high school,standard,none,74.0
+male,3.0,master's degree,standard,none,53.0
+male,,,free/reduced,none,76.0
+male,1.0,some college,standard,none,70.0
+male,0.0,master's degree,free/reduced,none,
+male,0.0,master's degree,free/reduced,none,56.0
+female,0.0,some college,free/reduced,none,35.0
+female,4.0,high school,standard,none,87.0
+female,0.0,associate's degree,free/reduced,none,80.0
+female,2.0,associate's degree,standard,completed,65.0
+male,1.0,high school,free/reduced,none,66.0
+female,4.0,associate's degree,standard,completed,
+female,3.0,some college,standard,none,
+male,3.0,associate's degree,standard,none,89.0
+male,,associate's degree,standard,completed,99.0
+male,3.0,some college,standard,none,74.0
+male,,high school,free/reduced,none,58.0
+male,0.0,some high school,standard,,70.0
+female,0.0,associate's degree,standard,none,80.0
+,1.0,associate's degree,standard,none,90.0
+female,4.0,associate's degree,standard,completed,80.0
+female,0.0,associate's degree,free/reduced,none,68.0
+female,2.0,high school,free/reduced,completed,69.0
+female,0.0,master's degree,free/reduced,none,32.0
+male,4.0,high school,,completed,82.0
+female,1.0,some high school,standard,none,57.0
+female,2.0,some college,free/reduced,none,69.0
+male,2.0,associate's degree,standard,,68.0
+male,1.0,associate's degree,free/reduced,completed,74.0
+male,3.0,master's degree,standard,none,
+male,3.0,associate's degree,free/reduced,completed,46.0
+male,4.0,associate's degree,standard,completed,76.0
+male,4.0,,standard,none,86.0
+male,4.0,some college,,none,69.0
+female,1.0,high school,standard,,52.0
+male,2.0,bachelor's degree,standard,none,63.0
+male,0.0,associate's degree,standard,completed,96.0
+male,3.0,some college,standard,completed,80.0
+female,1.0,high school,standard,none,59.0
+male,3.0,some high school,standard,completed,80.0
+female,1.0,high school,,completed,65.0
+female,0.0,master's degree,free/reduced,completed,74.0
+male,0.0,some high school,standard,none,90.0
+female,,some college,standard,completed,69.0
+male,3.0,high school,standard,none,69.0
+,2.0,some college,standard,none,62.0
+female,1.0,master's degree,standard,none,
+,4.0,,,completed,89.0
+female,1.0,bachelor's degree,standard,none,79.0
+male,0.0,some high school,standard,none,67.0
+male,4.0,some high school,standard,completed,82.0
+male,4.0,some high school,free/reduced,completed,63.0
+female,1.0,some college,free/reduced,none,71.0
+female,1.0,associate's degree,standard,none,55.0
+female,2.0,high school,free/reduced,none,61.0
+female,2.0,,free/reduced,none,35.0
+male,0.0,high school,free/reduced,none,75.0
+female,2.0,some high school,free/reduced,completed,73.0
+female,2.0,high school,free/reduced,none,56.0
+male,3.0,associate's degree,standard,none,80.0
+male,,some high school,standard,completed,83.0
+female,3.0,some college,free/reduced,completed,64.0
+female,0.0,some high school,standard,none,23.0
+female,0.0,some high school,free/reduced,completed,41.0
+male,,some college,standard,completed,61.0
+male,2.0,,standard,none,63.0
+male,4.0,,,completed,84.0
+male,1.0,some college,standard,none,55.0
+male,4.0,associate's degree,standard,completed,85.0
+male,0.0,high school,standard,,65.0
+male,1.0,associate's degree,standard,,88.0
+male,2.0,master's degree,free/reduced,completed,91.0
+female,2.0,some college,standard,none,51.0
+male,1.0,some college,standard,completed,73.0
+female,2.0,,standard,none,73.0
+male,3.0,master's degree,standard,,100.0
+female,4.0,some high school,standard,completed,48.0
+male,2.0,some college,standard,none,98.0
+male,4.0,master's degree,,none,68.0
+male,0.0,bachelor's degree,standard,none,64.0
+male,0.0,associate's degree,free/reduced,completed,72.0
+female,1.0,bachelor's degree,standard,none,63.0
+male,2.0,some college,standard,none,43.0
+male,3.0,some college,standard,,80.0
+female,3.0,,standard,none,71.0
+female,4.0,associate's degree,standard,,91.0
+female,1.0,some college,standard,,68.0
+female,4.0,associate's degree,standard,none,73.0
+female,,high school,,completed,75.0
+male,4.0,some college,,none,83.0
+male,1.0,high school,,none,88.0
+male,3.0,bachelor's degree,standard,none,59.0
+male,1.0,associate's degree,standard,none,74.0
+female,3.0,some college,free/reduced,none,43.0
+female,2.0,high school,free/reduced,none,76.0
+female,4.0,some high school,standard,none,
+,3.0,some high school,standard,completed,69.0
+female,1.0,some high school,standard,none,62.0
+,0.0,associate's degree,free/reduced,completed,61.0
+male,2.0,some college,standard,none,88.0
+female,2.0,some high school,free/reduced,,64.0
+female,0.0,bachelor's degree,standard,none,65.0
+female,,some college,standard,completed,73.0
+female,0.0,master's degree,standard,completed,50.0
+female,2.0,associate's degree,standard,completed,63.0
+female,1.0,bachelor's degree,standard,none,98.0
+female,3.0,high school,standard,none,90.0
+male,0.0,high school,free/reduced,completed,64.0
+female,4.0,high school,free/reduced,none,38.0
+female,1.0,bachelor's degree,standard,none,84.0
+male,3.0,high school,standard,completed,81.0
+male,3.0,,standard,none,82.0
+,2.0,associate's degree,free/reduced,completed,64.0
+female,0.0,high school,standard,none,55.0
+female,0.0,bachelor's degree,free/reduced,completed,
+female,1.0,some college,standard,none,83.0
+male,,associate's degree,,completed,76.0
+,1.0,some high school,standard,completed,83.0
+female,1.0,associate's degree,,none,69.0
+female,1.0,some college,free/reduced,none,43.0
+female,4.0,,free/reduced,none,
+female,2.0,some college,standard,none,
+male,1.0,some high school,free/reduced,completed,47.0
+,2.0,master's degree,standard,none,71.0
+female,0.0,master's degree,standard,completed,66.0
+male,4.0,some college,standard,none,81.0
+female,2.0,master's degree,standard,none,85.0
+female,2.0,master's degree,standard,none,76.0
+female,4.0,some college,free/reduced,none,50.0
+male,0.0,high school,standard,none,76.0
+male,2.0,some college,standard,none,65.0
+female,2.0,high school,standard,none,
+male,1.0,high school,standard,none,84.0
+male,4.0,bachelor's degree,standard,none,85.0
+female,1.0,,standard,none,61.0
+female,3.0,bachelor's degree,standard,completed,73.0
+male,0.0,some high school,standard,none,82.0
+female,3.0,associate's degree,standard,none,75.0
+male,1.0,bachelor's degree,standard,none,91.0
+female,4.0,master's degree,,none,67.0
+male,3.0,high school,standard,completed,62.0
+male,,master's degree,standard,none,61.0
+female,2.0,high school,standard,none,66.0
+male,2.0,master's degree,standard,none,59.0
+male,1.0,some college,standard,none,88.0
+female,2.0,associate's degree,free/reduced,none,67.0
+female,1.0,associate's degree,standard,completed,91.0
+male,3.0,associate's degree,free/reduced,completed,87.0
+male,3.0,some college,standard,completed,83.0
+female,2.0,associate's degree,standard,none,
+male,,associate's degree,standard,none,83.0
+male,4.0,associate's degree,standard,none,49.0
+,4.0,high school,standard,completed,
+male,3.0,associate's degree,free/reduced,completed,50.0
+male,1.0,some college,standard,none,62.0
+,1.0,bachelor's degree,standard,none,56.0
+female,2.0,associate's degree,standard,none,44.0
+female,2.0,some high school,free/reduced,none,63.0
+male,3.0,high school,standard,completed,72.0
+female,0.0,bachelor's degree,,completed,64.0
+,1.0,some college,standard,completed,61.0
+male,4.0,some college,free/reduced,none,82.0
+female,3.0,some high school,standard,completed,
+male,2.0,master's degree,standard,none,43.0
+male,0.0,some high school,,none,69.0
+female,0.0,master's degree,standard,none,62.0
+female,1.0,some high school,standard,none,60.0
+male,2.0,high school,standard,none,81.0
+female,2.0,associate's degree,free/reduced,completed,68.0
+male,4.0,associate's degree,standard,none,65.0
+female,0.0,high school,standard,none,59.0
+,3.0,associate's degree,standard,none,81.0
+male,3.0,master's degree,free/reduced,none,84.0
+female,4.0,high school,standard,,56.0
+male,2.0,master's degree,free/reduced,completed,71.0
+female,,master's degree,,none,93.0
+female,1.0,high school,standard,none,77.0
+male,2.0,some college,standard,none,50.0
+female,3.0,some college,standard,none,75.0
+female,3.0,,standard,none,64.0
+male,1.0,bachelor's degree,standard,none,77.0
+,4.0,some high school,standard,completed,64.0
+male,1.0,some high school,standard,none,71.0
+male,0.0,some high school,free/reduced,completed,58.0
+female,0.0,high school,free/reduced,none,47.0
+male,4.0,associate's degree,standard,none,57.0
+male,1.0,some college,standard,completed,82.0
+,4.0,master's degree,standard,none,53.0
+female,0.0,associate's degree,,,89.0
+female,3.0,some college,standard,completed,89.0
+female,3.0,some college,free/reduced,completed,75.0
+male,3.0,some college,free/reduced,none,62.0
+,4.0,high school,standard,none,63.0
+male,1.0,high school,standard,none,100.0
+female,1.0,associate's degree,standard,none,62.0
+female,1.0,associate's degree,standard,none,75.0
+male,0.0,some college,standard,none,51.0
+male,0.0,master's degree,free/reduced,none,74.0
+male,0.0,high school,free/reduced,none,66.0
+male,0.0,some high school,standard,completed,52.0
+male,0.0,master's degree,free/reduced,none,69.0
+female,2.0,some high school,free/reduced,completed,46.0
+female,0.0,some college,standard,none,74.0
+male,,master's degree,standard,none,100.0
+male,1.0,,standard,none,83.0
+male,0.0,associate's degree,free/reduced,completed,82.0
+female,1.0,,standard,none,58.0
+male,1.0,some high school,free/reduced,completed,59.0
+female,4.0,high school,,none,77.0
+female,3.0,,standard,none,
+male,3.0,master's degree,standard,none,85.0
+female,4.0,high school,free/reduced,completed,59.0
+female,0.0,master's degree,free/reduced,completed,71.0
+female,3.0,some high school,standard,none,52.0
+female,1.0,some college,standard,none,62.0
+male,4.0,associate's degree,standard,none,47.0
+male,0.0,some college,standard,completed,96.0
+female,0.0,some high school,standard,none,
+,1.0,high school,free/reduced,,20.0
+female,4.0,some high school,standard,none,70.0
+,,high school,free/reduced,completed,59.0
+,1.0,associate's degree,free/reduced,none,80.0
+female,4.0,some college,standard,none,83.0
+male,2.0,bachelor's degree,standard,none,75.0
+male,2.0,some college,free/reduced,completed,73.0
+female,1.0,associate's degree,standard,none,78.0
+male,2.0,bachelor's degree,,completed,94.0
+female,,some high school,free/reduced,completed,46.0
+male,4.0,some college,free/reduced,completed,77.0
+male,2.0,some high school,standard,none,63.0
+male,3.0,bachelor's degree,standard,completed,64.0
+female,4.0,some high school,free/reduced,none,60.0
+female,4.0,some college,standard,none,74.0
+,0.0,high school,free/reduced,none,67.0
+male,3.0,high school,,completed,78.0
+male,3.0,high school,standard,completed,88.0
+female,3.0,associate's degree,free/reduced,completed,52.0
+male,0.0,high school,standard,,88.0
+male,1.0,high school,,completed,78.0
+female,,high school,,none,55.0
+female,4.0,some college,standard,none,71.0
+male,0.0,high school,free/reduced,,75.0
+male,1.0,bachelor's degree,standard,completed,
+,3.0,bachelor's degree,standard,completed,66.0
+male,3.0,bachelor's degree,standard,none,39.0
+male,0.0,some college,standard,,85.0
+female,3.0,high school,free/reduced,none,46.0
+male,2.0,master's degree,free/reduced,completed,57.0
+female,3.0,associate's degree,standard,completed,65.0
+male,4.0,some college,standard,none,86.0
+,4.0,some high school,standard,none,59.0
+female,4.0,some high school,free/reduced,completed,49.0
+male,2.0,some college,free/reduced,none,51.0
+female,1.0,associate's degree,standard,none,53.0
+,0.0,some college,standard,none,82.0
+female,1.0,high school,free/reduced,,51.0
+female,1.0,some high school,standard,none,74.0
+female,2.0,master's degree,free/reduced,none,73.0
+female,4.0,high school,free/reduced,none,42.0
+female,1.0,some college,free/reduced,completed,41.0
+female,1.0,some college,standard,none,84.0
+female,2.0,some college,free/reduced,completed,64.0
+female,0.0,high school,free/reduced,none,74.0
+male,0.0,associate's degree,standard,none,91.0
+male,0.0,associate's degree,standard,none,67.0
+female,3.0,high school,standard,none,54.0
+female,3.0,master's degree,standard,,44.0
+female,2.0,master's degree,standard,completed,65.0
+male,4.0,associate's degree,standard,none,37.0
+female,0.0,associate's degree,free/reduced,none,58.0
+female,0.0,bachelor's degree,free/reduced,none,69.0
+male,0.0,some high school,standard,none,64.0
+female,4.0,high school,standard,none,70.0
+female,4.0,high school,free/reduced,none,55.0
+female,,some college,standard,completed,45.0
+male,,some college,standard,completed,80.0
+male,,some college,standard,none,77.0
+male,0.0,bachelor's degree,free/reduced,none,57.0
+female,0.0,bachelor's degree,standard,none,67.0
+female,4.0,master's degree,standard,none,68.0
+male,2.0,high school,standard,none,
+female,4.0,associate's degree,standard,,42.0
+female,1.0,associate's degree,standard,none,96.0
+female,3.0,bachelor's degree,free/reduced,none,55.0
+male,2.0,master's degree,standard,none,
+male,0.0,bachelor's degree,free/reduced,none,51.0
+female,2.0,some college,free/reduced,completed,27.0
+,4.0,high school,standard,none,60.0
+female,0.0,some high school,standard,none,44.0
+female,3.0,high school,standard,completed,
+female,3.0,associate's degree,standard,none,72.0
+female,0.0,some high school,standard,none,82.0
+female,3.0,bachelor's degree,standard,completed,82.0
+female,4.0,some high school,standard,none,70.0
+male,4.0,high school,free/reduced,completed,76.0
+female,3.0,bachelor's degree,free/reduced,completed,62.0
+female,2.0,high school,free/reduced,none,58.0
+female,2.0,high school,standard,none,61.0
+,1.0,bachelor's degree,standard,completed,88.0
+female,0.0,some college,standard,none,61.0
+,0.0,high school,standard,completed,88.0
+male,0.0,some high school,free/reduced,none,57.0
+female,4.0,high school,standard,completed,92.0
+male,3.0,master's degree,standard,none,80.0
+male,0.0,some high school,standard,none,62.0
+female,,some college,standard,none,71.0
+female,2.0,high school,free/reduced,none,54.0
+male,0.0,some college,,none,43.0
+female,0.0,,standard,none,51.0
+male,3.0,some high school,standard,none,57.0
+,,some high school,standard,completed,62.0
+female,0.0,some high school,standard,none,48.0
+male,0.0,associate's degree,free/reduced,completed,61.0
+female,1.0,some high school,standard,completed,94.0
+male,4.0,,free/reduced,none,
+female,4.0,associate's degree,standard,none,56.0
+male,4.0,associate's degree,free/reduced,none,68.0
+,0.0,some college,free/reduced,none,
+female,3.0,high school,standard,completed,49.0
+female,3.0,some college,standard,none,71.0
+female,2.0,some high school,standard,,78.0
+male,4.0,associate's degree,standard,none,
+male,1.0,high school,standard,none,66.0
+male,0.0,some high school,free/reduced,none,61.0
+male,4.0,some college,free/reduced,,59.0
+female,1.0,high school,free/reduced,none,49.0
+female,4.0,associate's degree,free/reduced,none,61.0
+female,3.0,bachelor's degree,free/reduced,completed,54.0
+female,3.0,high school,free/reduced,completed,45.0
+female,4.0,bachelor's degree,free/reduced,,81.0
+female,0.0,associate's degree,standard,none,71.0
+,3.0,associate's degree,standard,none,
+female,,some college,standard,none,56.0
+female,3.0,high school,free/reduced,completed,60.0
+male,1.0,associate's degree,standard,none,95.0
+male,,some college,standard,none,60.0
+male,0.0,some college,standard,none,60.0
+male,2.0,bachelor's degree,standard,none,82.0
+male,0.0,some college,free/reduced,none,78.0
+,3.0,,standard,none,57.0
+male,3.0,some college,standard,none,72.0
+,3.0,some high school,standard,none,
+male,,some college,standard,none,72.0
+male,2.0,some college,free/reduced,none,52.0
+male,3.0,high school,standard,,80.0
+male,1.0,associate's degree,standard,none,89.0
+female,0.0,some college,standard,completed,84.0
+female,4.0,some high school,standard,none,67.0
+female,4.0,,standard,completed,59.0
+male,,some college,standard,completed,95.0
+female,1.0,master's degree,standard,none,71.0
+female,3.0,high school,standard,none,72.0
+male,1.0,high school,standard,completed,83.0
+,4.0,some high school,,none,94.0
+male,2.0,some college,,completed,58.0
+male,,bachelor's degree,standard,completed,75.0
+female,2.0,some high school,free/reduced,none,65.0
+female,4.0,bachelor's degree,free/reduced,completed,
+female,0.0,some high school,free/reduced,none,34.0
+male,2.0,some college,standard,none,97.0
+female,2.0,high school,standard,none,44.0
+,1.0,some high school,standard,completed,60.0
+female,,high school,free/reduced,completed,66.0
+male,2.0,high school,standard,none,96.0
+female,,high school,free/reduced,none,39.0
+male,3.0,some college,free/reduced,none,56.0
+male,0.0,high school,standard,none,31.0
+,2.0,bachelor's degree,standard,completed,
+,1.0,bachelor's degree,,completed,100.0
+female,,high school,standard,completed,68.0
+,3.0,associate's degree,free/reduced,completed,79.0
+male,3.0,bachelor's degree,free/reduced,none,62.0
+female,3.0,associate's degree,standard,none,72.0
+female,0.0,some college,standard,none,66.0
+male,2.0,high school,,completed,64.0
+,,some high school,standard,none,62.0
+female,2.0,bachelor's degree,,completed,68.0
+male,,,free/reduced,completed,70.0
+female,0.0,bachelor's degree,free/reduced,none,
+female,2.0,high school,,completed,
+female,1.0,some college,standard,none,58.0
+male,0.0,some college,standard,none,75.0
+female,0.0,associate's degree,free/reduced,none,44.0
+female,0.0,some college,free/reduced,none,68.0
+male,4.0,bachelor's degree,,none,65.0
+female,3.0,some college,free/reduced,completed,66.0
+male,4.0,bachelor's degree,free/reduced,none,73.0
+female,1.0,associate's degree,,none,67.0
+female,0.0,associate's degree,free/reduced,none,66.0
+male,3.0,some college,standard,,81.0
+male,3.0,some high school,standard,none,77.0
+female,2.0,some college,free/reduced,none,43.0
+female,4.0,bachelor's degree,standard,none,58.0
+male,4.0,some college,free/reduced,none,65.0
+male,2.0,high school,standard,,92.0
+male,2.0,some high school,standard,completed,56.0
+female,2.0,master's degree,standard,none,65.0
+male,4.0,associate's degree,standard,none,
+male,1.0,some high school,,completed,100.0
+female,3.0,high school,standard,none,69.0
+male,,some college,standard,completed,70.0
+male,0.0,high school,standard,none,90.0
+male,3.0,,standard,none,90.0
+female,3.0,high school,standard,completed,63.0
+female,0.0,associate's degree,standard,none,40.0
+female,4.0,high school,standard,,64.0
+male,2.0,some college,standard,none,90.0
+male,3.0,some college,standard,none,76.0
+male,2.0,some college,free/reduced,none,42.0
+female,3.0,bachelor's degree,free/reduced,completed,45.0
+male,4.0,bachelor's degree,standard,none,76.0
+male,3.0,some high school,standard,completed,63.0
+male,4.0,some college,standard,completed,84.0
+female,0.0,bachelor's degree,free/reduced,none,62.0
+female,0.0,associate's degree,free/reduced,completed,69.0
+,1.0,some high school,standard,none,77.0
+male,0.0,bachelor's degree,standard,none,
+male,0.0,high school,standard,,
+male,3.0,associate's degree,,none,75.0
+,0.0,bachelor's degree,standard,none,61.0
+female,2.0,high school,standard,none,
+female,2.0,high school,standard,none,53.0
+male,4.0,some college,standard,,77.0
+male,4.0,high school,free/reduced,none,44.0
+male,1.0,high school,standard,none,44.0
+female,3.0,associate's degree,standard,completed,71.0
+,0.0,associate's degree,,completed,60.0
+male,4.0,some high school,standard,none,49.0
+female,0.0,high school,standard,completed,82.0
+male,2.0,master's degree,free/reduced,none,
+female,1.0,some high school,free/reduced,none,58.0
+female,3.0,high school,standard,none,65.0
+male,3.0,associate's degree,standard,none,50.0
+female,,associate's degree,free/reduced,completed,73.0
+male,3.0,some high school,,completed,40.0
+female,3.0,,free/reduced,completed,60.0
+male,3.0,,,none,57.0
+male,1.0,some college,free/reduced,none,57.0
+female,0.0,some high school,standard,none,83.0
+male,1.0,master's degree,standard,none,68.0
+male,4.0,bachelor's degree,standard,none,74.0
+male,0.0,master's degree,free/reduced,none,76.0
+female,2.0,some high school,,none,38.0
+female,1.0,high school,standard,none,63.0
+male,2.0,bachelor's degree,,none,87.0
+male,0.0,high school,free/reduced,none,81.0
+female,,associate's degree,standard,none,84.0
+female,4.0,high school,free/reduced,completed,68.0
+female,0.0,some high school,free/reduced,none,57.0
+female,1.0,master's degree,standard,none,75.0
+female,2.0,high school,,none,39.0
+female,0.0,some high school,standard,completed,54.0
+male,1.0,associate's degree,standard,none,71.0
+male,0.0,some college,standard,none,
+female,4.0,associate's degree,standard,none,61.0
+female,2.0,associate's degree,standard,completed,82.0
+female,2.0,associate's degree,standard,completed,73.0
+,,some high school,standard,none,52.0
+male,0.0,some high school,free/reduced,none,33.0
+male,3.0,associate's degree,,completed,67.0
+female,0.0,some high school,free/reduced,none,61.0
+female,1.0,associate's degree,standard,completed,86.0
+male,4.0,bachelor's degree,standard,completed,98.0
+male,2.0,some college,standard,completed,72.0
+male,0.0,associate's degree,,none,60.0
+male,4.0,some college,standard,none,66.0
+male,2.0,some high school,standard,completed,86.0
+female,2.0,high school,standard,none,45.0
+female,3.0,some high school,standard,none,75.0
+female,2.0,associate's degree,standard,none,51.0
+female,,high school,,none,21.0
+male,1.0,high school,free/reduced,none,54.0
+male,3.0,high school,standard,none,83.0
+male,0.0,associate's degree,free/reduced,none,74.0
+male,0.0,bachelor's degree,,none,73.0
+male,1.0,some high school,free/reduced,completed,69.0
+female,0.0,some college,standard,,81.0
+male,4.0,bachelor's degree,standard,completed,95.0
+male,1.0,some college,standard,completed,97.0
+female,3.0,master's degree,standard,completed,62.0
+,4.0,,standard,none,63.0
+female,0.0,high school,standard,completed,50.0
+female,,some high school,standard,none,25.0
+male,0.0,some high school,standard,none,73.0
+male,4.0,associate's degree,free/reduced,completed,57.0
+male,1.0,high school,standard,none,64.0
+female,4.0,high school,,none,86.0
+female,3.0,associate's degree,free/reduced,none,62.0
+male,0.0,associate's degree,standard,none,97.0
+female,2.0,some college,standard,none,62.0
+female,3.0,some high school,,none,91.0
+male,2.0,associate's degree,free/reduced,completed,60.0
+male,2.0,high school,free/reduced,none,59.0
+female,4.0,associate's degree,standard,none,75.0
+,4.0,master's degree,standard,completed,79.0
+female,2.0,,free/reduced,completed,79.0
+female,1.0,high school,free/reduced,none,34.0
+male,2.0,some high school,free/reduced,none,49.0
+female,1.0,some college,standard,completed,47.0
+male,,associate's degree,standard,none,78.0
+male,4.0,some high school,free/reduced,completed,46.0
+male,3.0,,free/reduced,none,72.0
+female,2.0,associate's degree,free/reduced,none,45.0
+female,4.0,associate's degree,free/reduced,none,28.0
+female,0.0,some high school,standard,none,83.0
+female,4.0,some college,standard,completed,86.0
+female,4.0,some high school,free/reduced,completed,64.0
+male,4.0,high school,free/reduced,none,65.0
+female,2.0,some college,free/reduced,completed,69.0
+female,4.0,high school,,completed,66.0
+female,4.0,some college,free/reduced,none,41.0
+male,3.0,,free/reduced,completed,67.0
+male,,bachelor's degree,free/reduced,completed,57.0
+female,1.0,associate's degree,free/reduced,completed,42.0
+female,4.0,high school,free/reduced,none,75.0
+female,4.0,associate's degree,standard,,77.0
+male,2.0,master's degree,free/reduced,none,65.0
+female,2.0,some high school,standard,completed,87.0
+female,2.0,high school,free/reduced,completed,72.0
+female,1.0,high school,standard,none,71.0
+female,1.0,some college,free/reduced,completed,60.0
+,2.0,high school,free/reduced,completed,67.0
+,0.0,high school,standard,none,54.0
+male,4.0,bachelor's degree,free/reduced,completed,48.0
+male,2.0,high school,standard,completed,67.0
+male,1.0,some high school,free/reduced,completed,
+,2.0,high school,standard,completed,80.0
+female,0.0,some college,,none,84.0
+male,0.0,some college,standard,completed,48.0
+female,3.0,some college,free/reduced,completed,
+female,4.0,some high school,standard,completed,69.0
+male,1.0,high school,standard,none,74.0
+female,1.0,some high school,standard,none,62.0
+male,3.0,high school,standard,completed,76.0
+male,0.0,bachelor's degree,,none,84.0
+male,1.0,high school,standard,none,93.0
+male,,associate's degree,standard,none,56.0
+female,4.0,some high school,,none,52.0
+female,0.0,some college,standard,completed,
+,3.0,high school,standard,completed,84.0
+male,4.0,some high school,standard,none,55.0
+male,4.0,high school,free/reduced,completed,54.0
+male,2.0,some high school,free/reduced,none,46.0
+male,1.0,high school,free/reduced,none,48.0
+male,4.0,some high school,standard,none,79.0
+female,2.0,,free/reduced,completed,66.0
+male,1.0,associate's degree,free/reduced,,56.0
+female,4.0,associate's degree,,none,60.0
+female,4.0,associate's degree,standard,none,75.0
+male,4.0,some high school,standard,completed,79.0
+male,3.0,high school,free/reduced,completed,41.0
+female,4.0,associate's degree,free/reduced,none,35.0
+female,2.0,some college,free/reduced,none,54.0
+,0.0,some high school,standard,none,67.0
+female,4.0,high school,standard,completed,85.0
+female,0.0,associate's degree,standard,none,92.0
+male,2.0,associate's degree,standard,completed,99.0
+female,3.0,some high school,free/reduced,completed,52.0
+,,associate's degree,free/reduced,none,73.0
+female,4.0,some high school,,completed,62.0
+male,4.0,some high school,standard,none,75.0
+female,0.0,associate's degree,standard,none,90.0
+male,0.0,high school,free/reduced,,54.0
+male,4.0,associate's degree,standard,none,81.0
+male,0.0,some high school,free/reduced,none,74.0
+,3.0,associate's degree,free/reduced,completed,68.0
+male,0.0,some college,standard,none,74.0
+male,3.0,high school,free/reduced,none,51.0
+female,,some high school,standard,none,68.0
+male,2.0,some college,standard,none,69.0
+male,1.0,some college,standard,,100.0
+female,3.0,some college,,none,53.0
+,4.0,bachelor's degree,free/reduced,completed,72.0
+male,0.0,bachelor's degree,free/reduced,none,
+female,4.0,high school,standard,none,61.0
+male,3.0,high school,standard,none,65.0
+female,4.0,high school,free/reduced,none,15.0
+male,4.0,some high school,,none,64.0
+male,4.0,high school,standard,none,77.0
+female,3.0,some college,,completed,61.0
+female,4.0,,free/reduced,completed,49.0
+male,0.0,,standard,none,70.0
+male,3.0,associate's degree,standard,none,60.0
+female,3.0,some college,standard,none,84.0
+male,3.0,high school,free/reduced,none,51.0
+male,1.0,bachelor's degree,standard,none,74.0
+female,2.0,bachelor's degree,standard,completed,64.0
+,4.0,some college,standard,completed,67.0
+male,3.0,associate's degree,standard,none,76.0
+male,0.0,some high school,standard,completed,70.0
+female,0.0,some college,standard,none,85.0
+female,2.0,some high school,standard,none,53.0
+male,0.0,high school,standard,none,84.0
+male,0.0,some high school,,,55.0
+,1.0,high school,standard,none,50.0
+male,1.0,some high school,free/reduced,none,79.0
+male,2.0,associate's degree,standard,none,81.0
+male,2.0,associate's degree,standard,completed,89.0
+male,2.0,associate's degree,free/reduced,completed,59.0
+male,3.0,,standard,completed,82.0
+male,3.0,associate's degree,standard,none,86.0
+female,4.0,some college,free/reduced,none,41.0
+female,,master's degree,standard,completed,64.0
+male,4.0,associate's degree,free/reduced,completed,68.0
+male,1.0,high school,free/reduced,completed,74.0
+female,2.0,some college,free/reduced,completed,44.0
+female,2.0,high school,free/reduced,completed,34.0
+male,1.0,some high school,standard,completed,45.0
+female,0.0,master's degree,standard,completed,83.0
+male,2.0,some college,standard,none,55.0
+,2.0,high school,free/reduced,none,61.0
+female,4.0,high school,standard,completed,81.0
+male,2.0,associate's degree,free/reduced,,45.0
+,3.0,high school,standard,none,71.0
+male,2.0,bachelor's degree,standard,completed,62.0
+female,0.0,some college,standard,completed,78.0
+male,4.0,some college,standard,none,76.0
+female,2.0,,standard,completed,73.0
+female,2.0,associate's degree,,none,82.0
+male,3.0,some college,standard,completed,69.0
+male,0.0,bachelor's degree,free/reduced,none,72.0
+female,0.0,high school,standard,completed,72.0
+,,associate's degree,free/reduced,none,
+male,2.0,,standard,completed,83.0
+male,3.0,some high school,standard,none,68.0
+female,1.0,some high school,free/reduced,completed,62.0
+male,4.0,associate's degree,standard,none,99.0
+male,1.0,high school,standard,completed,88.0
+female,2.0,high school,standard,none,56.0
+female,1.0,associate's degree,standard,none,68.0
+male,0.0,high school,standard,completed,75.0
+female,4.0,some college,standard,none,45.0
+male,2.0,,free/reduced,none,
+male,,some college,standard,completed,
+male,1.0,some college,free/reduced,none,76.0
+female,3.0,some high school,free/reduced,completed,64.0
+female,0.0,some college,standard,none,56.0
+female,3.0,some college,free/reduced,none,74.0
+male,4.0,bachelor's degree,standard,completed,97.0
+female,2.0,some college,standard,none,83.0
+female,,bachelor's degree,standard,completed,55.0
+female,4.0,some college,standard,completed,77.0
+,2.0,bachelor's degree,standard,none,78.0
+,2.0,some high school,standard,completed,89.0
+male,1.0,high school,standard,,78.0
+male,3.0,some college,free/reduced,none,33.0
+female,0.0,associate's degree,standard,none,66.0
+male,3.0,some college,standard,completed,87.0
+female,4.0,some college,standard,none,50.0
+female,3.0,high school,standard,none,79.0
+male,3.0,bachelor's degree,free/reduced,none,70.0
+female,1.0,some college,free/reduced,,47.0
+female,0.0,high school,standard,none,80.0
+male,3.0,some college,standard,completed,
+female,3.0,high school,free/reduced,completed,78.0
+male,4.0,some college,free/reduced,completed,56.0
+male,2.0,some high school,standard,none,54.0
+male,0.0,associate's degree,,completed,79.0
+male,2.0,associate's degree,standard,completed,93.0
+,3.0,some high school,standard,completed,74.0
+female,4.0,associate's degree,free/reduced,none,
+male,1.0,high school,standard,none,90.0
+,1.0,some college,free/reduced,completed,62.0
+female,4.0,,,none,58.0
+male,4.0,some college,free/reduced,none,73.0
+male,2.0,some high school,standard,none,63.0
+male,3.0,associate's degree,standard,completed,89.0
+male,0.0,some college,standard,none,75.0
+male,0.0,some college,free/reduced,none,51.0
+female,2.0,some high school,free/reduced,,58.0
+female,1.0,bachelor's degree,standard,completed,92.0
+female,0.0,associate's degree,,none,39.0
+female,1.0,associate's degree,standard,none,84.0
+male,2.0,some college,standard,completed,71.0
+female,4.0,high school,standard,none,85.0
+female,0.0,high school,free/reduced,none,59.0
+male,0.0,bachelor's degree,standard,none,71.0
+,4.0,,standard,none,74.0
+male,4.0,some college,free/reduced,none,
+female,2.0,associate's degree,free/reduced,completed,83.0
+male,3.0,some college,standard,none,74.0
+male,,some high school,free/reduced,completed,64.0
+male,3.0,some college,standard,none,79.0
+female,1.0,high school,free/reduced,none,24.0
+male,1.0,,,completed,66.0
+female,2.0,some high school,standard,completed,69.0
+male,1.0,some high school,standard,none,65.0
+male,4.0,some high school,,none,
+female,1.0,high school,standard,none,54.0
+male,3.0,some high school,standard,none,59.0
+male,2.0,some college,free/reduced,none,60.0
+female,2.0,,standard,,68.0
+,4.0,high school,standard,none,61.0
+,1.0,some college,free/reduced,,84.0
+female,1.0,master's degree,standard,none,62.0
+female,,some high school,standard,none,70.0
+male,3.0,high school,free/reduced,completed,
+female,0.0,associate's degree,standard,completed,81.0
+male,1.0,master's degree,free/reduced,none,54.0
+male,3.0,high school,standard,none,67.0
+male,2.0,some high school,standard,,56.0
+,3.0,bachelor's degree,free/reduced,none,63.0
+male,4.0,associate's degree,free/reduced,none,39.0
+male,0.0,master's degree,standard,none,93.0
+female,2.0,some high school,,completed,65.0
+male,2.0,associate's degree,standard,none,83.0
+male,4.0,associate's degree,free/reduced,completed,75.0
+male,4.0,some college,free/reduced,,71.0
+female,3.0,some college,standard,none,46.0
+female,4.0,bachelor's degree,standard,completed,
+male,4.0,bachelor's degree,standard,none,55.0
+male,4.0,master's degree,standard,completed,79.0
+male,,associate's degree,free/reduced,none,62.0
+female,4.0,high school,,completed,55.0
+female,3.0,some college,standard,none,58.0
+male,2.0,associate's degree,free/reduced,none,82.0
+female,0.0,high school,free/reduced,none,30.0
+male,3.0,some college,standard,none,80.0
+male,2.0,some college,standard,none,98.0
+female,2.0,some college,standard,none,83.0
+female,1.0,bachelor's degree,standard,none,81.0
+female,4.0,,free/reduced,completed,54.0
+female,3.0,associate's degree,standard,completed,82.0
+female,2.0,high school,free/reduced,none,62.0
+female,0.0,high school,free/reduced,completed,70.0
+female,,some college,standard,none,77.0
+male,,some college,standard,none,55.0
+male,0.0,high school,,completed,78.0
+male,0.0,associate's degree,free/reduced,completed,69.0
+female,3.0,some college,free/reduced,completed,58.0
+female,2.0,,free/reduced,completed,39.0
+male,1.0,some high school,standard,none,80.0
+male,4.0,some college,standard,none,76.0
+female,0.0,high school,standard,,52.0
+male,0.0,master's degree,standard,,88.0
+male,2.0,master's degree,free/reduced,none,82.0
+male,4.0,,free/reduced,none,62.0
+female,1.0,,standard,completed,90.0
+,2.0,associate's degree,free/reduced,none,41.0
+male,0.0,some college,,completed,
+female,2.0,some college,standard,none,61.0
+,2.0,bachelor's degree,standard,none,68.0
+,,associate's degree,standard,,60.0
+female,,some high school,free/reduced,completed,37.0
+male,1.0,some college,,none,67.0
+female,4.0,associate's degree,standard,,73.0
+male,1.0,some college,free/reduced,completed,74.0
+female,2.0,some college,free/reduced,completed,67.0
+,0.0,some college,free/reduced,none,37.0
+female,3.0,high school,standard,none,61.0
+female,2.0,some college,free/reduced,completed,64.0
+female,4.0,some college,standard,none,74.0
+male,2.0,high school,free/reduced,none,34.0
+female,4.0,high school,standard,none,54.0
+,3.0,,standard,none,65.0
+male,2.0,some college,standard,none,81.0
+male,3.0,master's degree,standard,completed,88.0
+male,,some high school,standard,none,82.0
+female,2.0,some high school,standard,none,70.0
+male,3.0,some high school,standard,completed,60.0
+female,1.0,master's degree,standard,none,70.0
+female,,some high school,standard,none,67.0
+female,0.0,,standard,completed,98.0
+male,2.0,some high school,free/reduced,completed,35.0
+female,3.0,associate's degree,standard,none,69.0
+male,1.0,high school,free/reduced,completed,38.0
+male,4.0,high school,free/reduced,none,70.0
+female,1.0,some high school,free/reduced,completed,42.0
+female,2.0,some high school,free/reduced,none,47.0
+female,4.0,bachelor's degree,free/reduced,completed,49.0
+male,3.0,some college,standard,completed,90.0
+male,,associate's degree,free/reduced,none,49.0
+male,0.0,master's degree,free/reduced,none,83.0
+male,2.0,associate's degree,free/reduced,none,82.0
+female,3.0,associate's degree,,none,72.0
+female,3.0,associate's degree,standard,none,67.0
+male,3.0,master's degree,standard,none,92.0
+female,0.0,master's degree,standard,none,59.0
+male,3.0,bachelor's degree,standard,,
+,3.0,some high school,standard,none,88.0
+male,2.0,,standard,none,92.0
+male,3.0,associate's degree,free/reduced,,82.0
+female,,some college,standard,none,59.0
+male,1.0,,free/reduced,,45.0
+male,2.0,high school,free/reduced,none,56.0
+male,4.0,high school,,none,52.0
+male,2.0,associate's degree,standard,none,86.0
+female,4.0,some college,standard,completed,81.0
+female,3.0,associate's degree,free/reduced,none,61.0
+male,4.0,high school,,none,51.0
+female,1.0,bachelor's degree,free/reduced,none,
+male,1.0,high school,standard,none,81.0
+female,0.0,bachelor's degree,free/reduced,none,73.0
+female,4.0,bachelor's degree,standard,completed,92.0
+,1.0,associate's degree,standard,none,71.0
+female,3.0,high school,standard,none,61.0
+,3.0,associate's degree,standard,none,80.0
+male,2.0,some high school,free/reduced,none,38.0
+male,,some high school,standard,completed,72.0
+female,2.0,some college,standard,completed,96.0
+female,4.0,associate's degree,standard,completed,64.0
+female,2.0,some high school,standard,none,44.0
+female,3.0,some college,standard,completed,81.0
+male,4.0,high school,standard,completed,85.0
+male,0.0,associate's degree,standard,none,82.0
+male,3.0,,standard,none,72.0
+female,4.0,master's degree,free/reduced,none,43.0
+female,2.0,some college,standard,,58.0
+male,1.0,some college,free/reduced,completed,72.0
+male,3.0,some college,standard,completed,80.0
+male,4.0,,standard,none,81.0
+male,0.0,some high school,free/reduced,none,66.0
+male,,associate's degree,standard,,74.0
+,0.0,master's degree,free/reduced,completed,75.0
+male,2.0,some college,standard,none,68.0
+male,3.0,some high school,free/reduced,none,
+male,,some college,standard,none,58.0
+male,1.0,some college,standard,none,79.0
+male,4.0,some high school,standard,none,63.0
+female,1.0,associate's degree,free/reduced,none,59.0
+male,0.0,,free/reduced,none,47.0
+male,3.0,some college,free/reduced,completed,67.0
+male,2.0,some college,standard,completed,92.0
+male,1.0,associate's degree,standard,none,44.0
+,0.0,master's degree,free/reduced,none,57.0
+female,0.0,bachelor's degree,standard,completed,83.0
+female,3.0,,standard,completed,68.0
+male,0.0,associate's degree,standard,none,59.0
+female,2.0,some high school,free/reduced,none,36.0
+male,1.0,some college,standard,completed,56.0
+female,0.0,high school,free/reduced,completed,80.0
+male,2.0,some college,free/reduced,completed,62.0
+male,4.0,some high school,standard,none,90.0
+male,4.0,associate's degree,standard,completed,55.0
+female,2.0,bachelor's degree,free/reduced,completed,44.0
+male,2.0,high school,standard,completed,
+female,4.0,high school,standard,none,92.0
+male,1.0,high school,free/reduced,completed,73.0
+female,4.0,,standard,completed,75.0
+male,0.0,associate's degree,standard,completed,82.0
+male,4.0,some high school,standard,none,84.0
+male,2.0,master's degree,standard,none,81.0
+male,,some college,standard,none,82.0
+female,4.0,master's degree,standard,completed,79.0
+,1.0,high school,standard,none,31.0
+male,4.0,,standard,none,73.0
+female,3.0,some college,,none,89.0
+male,4.0,bachelor's degree,standard,completed,100.0
+,,associate's degree,free/reduced,completed,
+male,4.0,some high school,standard,none,94.0
+male,1.0,associate's degree,standard,completed,79.0
+male,4.0,high school,free/reduced,completed,77.0
+male,2.0,some college,standard,none,63.0
+male,4.0,high school,standard,none,56.0
+female,1.0,,free/reduced,completed,58.0
+male,1.0,some college,standard,completed,77.0
+female,3.0,some college,standard,completed,82.0
+female,1.0,high school,free/reduced,none,51.0
+,2.0,some high school,standard,none,92.0
+female,0.0,high school,standard,none,87.0
+male,3.0,associate's degree,standard,completed,88.0
+,1.0,some college,standard,none,77.0
+female,2.0,some college,standard,none,62.0
+male,2.0,associate's degree,standard,none,61.0
+female,1.0,associate's degree,free/reduced,none,65.0
+male,0.0,master's degree,standard,completed,84.0
+,2.0,some high school,free/reduced,none,30.0
+male,1.0,associate's degree,free/reduced,completed,63.0
+female,0.0,high school,standard,none,79.0
+female,1.0,some college,standard,none,51.0
+,3.0,some college,standard,none,66.0
+female,1.0,associate's degree,,none,63.0
+female,4.0,associate's degree,free/reduced,none,
+female,4.0,master's degree,standard,none,69.0
+female,1.0,some college,free/reduced,none,70.0
+male,2.0,some high school,standard,none,67.0
+female,0.0,some high school,standard,none,53.0
+female,3.0,bachelor's degree,free/reduced,none,50.0
+female,2.0,high school,standard,none,59.0
+female,0.0,high school,free/reduced,,54.0
+male,1.0,some college,standard,none,81.0
+male,0.0,high school,standard,none,69.0
+male,2.0,high school,standard,none,87.0
+female,0.0,bachelor's degree,standard,none,88.0
+female,0.0,bachelor's degree,standard,none,52.0
+female,1.0,some high school,standard,none,60.0
+female,4.0,some high school,standard,,77.0
+male,4.0,associate's degree,free/reduced,completed,47.0
+male,0.0,some college,standard,none,
+female,2.0,some college,standard,completed,92.0
+female,1.0,some high school,standard,none,
+,,high school,standard,none,74.0
+male,4.0,some high school,standard,completed,67.0
+male,4.0,some college,free/reduced,none,56.0
+female,3.0,associate's degree,standard,none,84.0
+male,0.0,associate's degree,standard,none,73.0
+male,3.0,master's degree,free/reduced,none,75.0
+,1.0,high school,standard,completed,70.0
+male,3.0,high school,standard,none,
+,3.0,bachelor's degree,standard,completed,86.0
+female,1.0,high school,standard,completed,77.0
+male,4.0,high school,free/reduced,completed,58.0
+,4.0,some college,,,70.0
+female,4.0,master's degree,standard,none,69.0
+male,1.0,some college,standard,completed,94.0
+female,0.0,some college,free/reduced,none,76.0
+female,2.0,high school,standard,none,71.0
+male,4.0,associate's degree,,none,76.0
+male,3.0,bachelor's degree,free/reduced,none,85.0
+male,1.0,some high school,standard,none,94.0
+male,4.0,master's degree,standard,none,91.0
+male,2.0,associate's degree,standard,completed,100.0
+male,4.0,high school,standard,none,65.0
+female,1.0,bachelor's degree,free/reduced,none,68.0
+male,1.0,high school,free/reduced,none,59.0
+female,4.0,,,none,73.0
+male,,some college,free/reduced,completed,76.0
+female,3.0,some high school,standard,none,86.0
+female,1.0,associate's degree,standard,completed,75.0
+male,3.0,some high school,standard,,68.0
+female,1.0,high school,free/reduced,none,68.0
+male,,some college,standard,none,59.0
+male,2.0,bachelor's degree,standard,none,84.0
+male,1.0,some college,free/reduced,none,67.0
+,3.0,associate's degree,,,59.0
+male,0.0,bachelor's degree,,none,58.0
+male,4.0,associate's degree,standard,none,72.0
+female,,associate's degree,standard,none,61.0
+female,0.0,some high school,free/reduced,none,55.0
+female,0.0,bachelor's degree,standard,none,41.0
+female,0.0,some college,free/reduced,none,36.0
+male,1.0,associate's degree,standard,completed,
+male,3.0,associate's degree,free/reduced,,57.0
+female,0.0,associate's degree,standard,,81.0
+male,4.0,some high school,standard,none,59.0
+male,0.0,some college,free/reduced,none,66.0
+,1.0,some college,free/reduced,completed,65.0
+female,3.0,associate's degree,standard,none,65.0
+female,0.0,some high school,free/reduced,completed,53.0
+male,4.0,,standard,none,79.0
+,1.0,associate's degree,standard,completed,89.0
+female,1.0,high school,free/reduced,none,85.0
+female,4.0,some college,standard,none,79.0
+female,1.0,associate's degree,standard,completed,83.0
+female,3.0,some high school,free/reduced,none,62.0
+,0.0,some college,standard,none,64.0
+female,,bachelor's degree,standard,none,66.0
+female,2.0,some high school,free/reduced,none,36.0
+female,3.0,some high school,,none,74.0
+female,1.0,bachelor's degree,standard,completed,85.0
+female,,high school,standard,completed,44.0
+female,1.0,some college,standard,completed,68.0
+female,0.0,some college,standard,completed,59.0
+male,2.0,high school,standard,none,64.0
+female,4.0,some college,free/reduced,none,62.0
+male,1.0,master's degree,free/reduced,none,45.0
+male,3.0,high school,standard,none,85.0
+male,4.0,some high school,standard,none,45.0
+,1.0,associate's degree,standard,none,81.0
+male,1.0,high school,standard,none,65.0
+female,4.0,high school,free/reduced,none,48.0
+female,2.0,high school,standard,none,59.0
+female,4.0,,standard,completed,80.0
+female,3.0,bachelor's degree,standard,completed,66.0
+female,2.0,bachelor's degree,standard,completed,
+male,0.0,some high school,free/reduced,none,47.0
+female,1.0,high school,standard,none,74.0
+male,3.0,bachelor's degree,,none,55.0
+male,,associate's degree,standard,none,100.0
+male,3.0,some high school,standard,none,83.0
+male,4.0,,standard,none,76.0
+,2.0,some high school,standard,completed,87.0
+male,4.0,some high school,standard,,28.0
+male,3.0,some high school,standard,completed,76.0
+female,4.0,bachelor's degree,standard,none,86.0
+female,2.0,bachelor's degree,free/reduced,none,65.0
+male,2.0,master's degree,standard,none,88.0
+female,2.0,,standard,,87.0
+male,2.0,some high school,standard,none,51.0
+male,2.0,associate's degree,standard,completed,67.0
+female,3.0,some high school,standard,none,70.0
+female,1.0,associate's degree,standard,none,72.0
+male,3.0,associate's degree,free/reduced,completed,75.0
+male,4.0,some high school,standard,none,83.0
+female,3.0,associate's degree,,none,82.0
+male,1.0,,standard,none,77.0
+male,0.0,,standard,none,80.0
+female,0.0,high school,standard,completed,67.0
+male,1.0,high school,standard,none,80.0
+male,4.0,high school,standard,none,58.0
