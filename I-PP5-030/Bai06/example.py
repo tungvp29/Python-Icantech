@@ -9,7 +9,7 @@ st.write('Kiểu dữ liệu')
 st.write(df.dtypes)
 st.write('Bảng dữ liệu gốc:')
 st.dataframe(df)
-# df = df.astype({'math score': 'float'})
+df = df.astype({'math score': 'float'})
 # st.write(df.dtypes)
 
 # st.write(df.duplicated())
