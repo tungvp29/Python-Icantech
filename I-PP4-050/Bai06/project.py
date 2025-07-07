@@ -1,7 +1,7 @@
 import streamlit as st
 import time
 
-st.title("Ứng dụng nhập thông tin cá nhân :male-teacher:")
+st.title("Ứng dụng nhập thông tin cá nhân")
 pro = 0
 myProgress = st.progress(pro)
 name = st.text_input(":memo: Nhập tên: ")
