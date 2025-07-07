@@ -1,13 +1,13 @@
 import streamlit as st
 import time
 
-st.title("Ứng dụng nhập thông tin cá nhân :100:")
+st.title("Ứng dụng nhập thông tin cá nhân :male-teacher:")
 pro = 0
 myProgress = st.progress(pro)
-name = st.text_input("Nhập tên: ")
-age = st.text_input("Nhập tuổi: ")
-address = st.text_input("Nhập địa chỉ: ")
-phone = st.text_input("Nhập số điện thoại: ")
+name = st.text_input(":memo: Nhập tên: ")
+age = st.text_input(":date: Nhập tuổi: ")
+address = st.text_input(":house: Nhập địa chỉ: ")
+phone = st.text_input(":telephone_receiver: Nhập số điện thoại: ")
 
 if name != "":
     pro += 25
@@ -19,7 +19,7 @@ if phone != "":
     pro += 25
 myProgress.progress(pro)
 
-button = st.button("Gửi thông tin", 1)
+button = st.button(":email: Gửi thông tin", 1)
 if button:
     if pro == 100:
         sendStatus = 0
@@ -31,10 +31,10 @@ if button:
 
         st.write(f"Cám ơn {name}! Thông tin của bạn đã được gửi thành công.")
         st.write("Dưới đây là nội dung được gửi:")
-        st.write("Họ và tên:", name)
-        st.write("Địa chỉ:", address)
-        st.write("Số điện thoại:", phone)
-        st.write("Tuổi của bạn là:", age)
+        st.write(":memo: Họ và tên:", name)
+        st.write(":house: Địa chỉ:", address)
+        st.write(":telephone_receiver: Số điện thoại:", phone)
+        st.write(":date: Tuổi của bạn là:", age)
         st.balloons()
     else:
         st.error("Vui lòng điền đầy đủ thông tin trước khi gửi.")
