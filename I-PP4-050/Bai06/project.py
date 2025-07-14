@@ -3,7 +3,7 @@ import time
 
 st.title("Ứng dụng nhập thông tin cá nhân")
 pro = 0
-myProgress = st.progress(pro)
+tienTrinhNhapDL = st.progress(pro)
 name = st.text_input(":memo: Nhập tên: ")
 age = st.text_input(":date: Nhập tuổi: ")
 address = st.text_input(":house: Nhập địa chỉ: ")
@@ -17,16 +17,16 @@ if address != "":
     pro += 25
 if phone != "":
     pro += 25
-myProgress.progress(pro)
+tienTrinhNhapDL.progress(pro)
 
 button = st.button(":email: Gửi thông tin", 1)
 if button:
     if pro == 100:
         sendStatus = 0
-        sendProgress = st.progress(sendStatus)         #0 -> 1: float; 0 -> 100: int
+        tienTrinhGuiDL = st.progress(sendStatus)         #0 -> 1: float; 0 -> 100: int
         for i in range(100):
             sendStatus += 1
-            sendProgress.progress(sendStatus, f"Đang gửi thông tin...{sendStatus}%")
+            tienTrinhGuiDL.progress(sendStatus, f"Đang gửi thông tin...{sendStatus}%")
             time.sleep(0.05)
 
         st.write(f"Cám ơn {name}! Thông tin của bạn đã được gửi thành công.")

@@ -9,7 +9,7 @@ if button:
 st.button("Click me", 'nut2')
 
 pro = 0
-myProgress = st.progress(pro)         #0 -> 1: float; 0 -> 100: int
+myProgress = st.progress(50)         #0 -> 1: float; 0 -> 100: int
 for i in range(100):
     pro += 1
     myProgress.progress(pro)
@@ -18,3 +18,4 @@ for i in range(100):
 button2 = st.button("Bóng bay này!", 'nut3')
 if button2:
     st.balloons()
+
