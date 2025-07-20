@@ -11,10 +11,10 @@ data = [['a', 'b', 'c', 'd'],
 st.title('Điểm học sinh:')
 
 st.write('Câu lệnh write() hiển thị dữ liệu dưới dạng văn bản')
-st.write(data)
+st.write(data1)
 
 st.write('Câu lệnh table() hiển thị dữ liệu dưới dạng bảng')
-st.table(data)
+st.table(data1)
 
 st.write('Câu lệnh dataframe() hiển thị dữ liệu dưới dạng bảng có thể tương tác')
-st.dataframe(data)
+st.dataframe(data1)

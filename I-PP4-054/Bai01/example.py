@@ -2,6 +2,7 @@ class Car():
     # Thuộc tính
     loai_xe = ''
     ghe = 0
+    speed = 0
 
     #Phương thức
     def khoi_dong(self):
@@ -12,6 +13,7 @@ class Car():
 
 #Đối tượng khởi tạo từ class Car
 xe1 = Car()
+xe1.speed = 100
 xe1.loai_xe = 'Honda'
 xe1.ghe = 5
 print(f'Loại xe: {xe1.loai_xe}' )
