@@ -24,8 +24,8 @@ caSi = Singer(
     anhDaiDien = 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/SOOBIN_HO%C3%80NG_S%C6%A0N_2.png/250px-SOOBIN_HO%C3%80NG_S%C6%A0N_2.png'
 )
 
-baiHat1 = Song('Em của ngày hôm qua', 'assets/audio/EmCuaNgayHomQua.mp3', 'audio')
-baiHat2 = Song('Bèo dạt mây trôi', 'assets/audio/BeoDatMayTroi.mp3', 'audio')
+baiHat1 = Song('Em của ngày hôm qua', 'https://github.com/tungvp29/Python-Icantech/blob/main/PYDT4D0213/Bai08/assets/audio/EmCuaNgayHomQua.mp3', 'audio')
+baiHat2 = Song('Bèo dạt mây trôi', 'https://github.com/tungvp29/Python-Icantech/blob/main/PYDT4D0213/Bai08/assets/audio/BeoDatMayTroi.mp3', 'audio')
 lstAudio = [baiHat1, baiHat2]
 
 baiHat3 = Song('Giá như', 'https://www.youtube.com/watch?v=UOL-e1LTDag', 'video')
