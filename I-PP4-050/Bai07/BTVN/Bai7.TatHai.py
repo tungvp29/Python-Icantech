@@ -1,5 +1,9 @@
 import streamlit as st
-st.set_page_config(page_title="trắc nghiệm tính cách ", page_icon=":question:",layout="wide",initial_sidebar_state="expanded")
+st.set_page_config(
+    page_title="trắc nghiệm tính cách ", 
+    page_icon=":question:",
+    layout="wide",
+    initial_sidebar_state="expanded")
 st.title("hãy chọn một con vật bạn yêu thích:")
 col1,col2,col3,col4,col5=st.columns(5)
 tinhcach={'con mèo':'lựa chọn này cho thấy bạn chưa sẵn sàng bắt đầu công việc, khao khát được đi nghỉ',
@@ -8,6 +12,7 @@ tinhcach={'con mèo':'lựa chọn này cho thấy bạn chưa sẵn sàng bắt
           'con ngựa':'có điều gì đó đang hạn chế sự tự do của bạn',
           'con thiên nga':'hiện tại bạn có khoảng thời gian ngọt ngào, hãy cố gắng tận hưởng và kéo dài nó nhé'
           }
+# Tạo các button trong các cột
 with col1:
     b1=st.button('con mèo')
 with col2:
@@ -18,6 +23,8 @@ with col4:
     b4=st.button('con ngựa')
 with col5:
     b5=st.button('con thiên nga')    
+
+# Hiển thị kết quả khi người dùng nhấn nút
 if b1:
     with st.expander("con mèo"):
         st.write(tinhcach["con mèo"])
@@ -32,7 +39,9 @@ if b4:
         st.write(tinhcach["con ngựa"])
 if b5:
     with st.expander("con thiên nga"):
-        st.write(tinhcach["con thiên nga"])        
+        st.write(tinhcach["con thiên nga"])      
+
+# Nội dung trong sidebar bên trái
 with st.sidebar:
     st.title("trắc nghiệm tính cách")
     if b1:

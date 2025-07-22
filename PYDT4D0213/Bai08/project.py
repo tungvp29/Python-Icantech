@@ -9,6 +9,7 @@ class Singer:
         self.noisinh = noisinh
         self.gioithieu = gioithieu
         self.anhDaiDien = anhDaiDien
+        self.baiHat = []
 
 class Song:
     def __init__(self, ten, link, loai):

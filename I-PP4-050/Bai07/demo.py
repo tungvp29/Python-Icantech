@@ -23,7 +23,7 @@ class Personality:
 conmeo = Personality(
     'Con mèo', 
     'Lựa chọn này cho thấy bạn chưa sẵn sàng bắt đầu công việc, khao khát được đi nghỉ',
-    'https://static.toiimg.com/photo/msid-67586673/67586673.jpg?resizemode=4&width=400'
+    'https://github.com/tungvp29/Python-Icantech/blob/main/PYDT4D0213/Bai08/assets/Lion-species-hero-c-George-Logan.jpg'
     )
 
 concho = Personality(

@@ -15,6 +15,7 @@ with st.sidebar:
     
 
 st.title("Ứng dụng nhập thông tin cá nhân")
+st.expander("Hướng dẫn sử dụng")
 with st.expander("Hướng dẫn sử dụng"):
     st.write("Vui lòng điền đầy đủ thông tin dưới đây:" * 10)
 
