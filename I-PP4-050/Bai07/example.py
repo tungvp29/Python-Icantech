@@ -17,9 +17,12 @@ with st.sidebar:
 st.title("Ứng dụng nhập thông tin cá nhân")
 st.expander("Hướng dẫn sử dụng")
 with st.expander("Hướng dẫn sử dụng"):
+    st.title()
     st.write("Vui lòng điền đầy đủ thông tin dưới đây:" * 10)
 
-with st.expander("Thông tin cá nhân"):
+st.expander(expanded=True, label = "Thông tin cá nhân")
+
+with st.expander("Thông tin cá nhân", True):
     pro = 0
     tienTrinhNhapDL = st.progress(pro)
     name = st.text_input(":memo: Nhập tên: ")
