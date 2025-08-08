@@ -1,57 +1,57 @@
 ngay_bao_cao,ma_don_vi,ten_don_vi,ten_chi_so,so_luong
-2023-08-08,DV4570,DonVi_10,Số lượng nhiệm vụ hoàn thành đúng hạn,202
-2023-08-15,DV5140,DonVi_45,Số lượng nhiệm vụ hoàn thành quá hạn,435
-2023-08-22,DV3786,DonVi_2,Số lượng nhiệm vụ gần đến hạn,368
-2023-08-29,DV5238,DonVi_11,Số lượng nhiệm vụ trong hạn,627
-2023-09-05,DV3045,DonVi_36,Số lượng nhiệm vụ quá hạn,493
-2023-09-12,DV1234,DonVi_15,Số lượng nhiệm vụ hoàn thành đúng hạn,456
-2023-09-19,DV5432,DonVi_3,Số lượng nhiệm vụ quá hạn,218
-2023-09-26,DV6789,DonVi_5,Số lượng nhiệm vụ trong hạn,951
-2023-10-03,DV9876,DonVi_9,Số lượng nhiệm vụ trong hạn,226
-2023-10-10,DV4321,DonVi_22,Số lượng nhiệm vụ hoàn thành đúng hạn,451
-2023-10-17,DV6543,DonVi_8,Số lượng nhiệm vụ gần đến hạn,712
-2023-10-24,DV8765,DonVi_14,Số lượng nhiệm vụ quá hạn,193
-2023-10-31,DV5678,DonVi_28,Số lượng nhiệm vụ hoàn thành đúng hạn,521
-2023-11-07,DV2345,DonVi_23,Số lượng nhiệm vụ gần đến hạn,812
-2023-11-14,DV7890,DonVi_38,Số lượng nhiệm vụ hoàn thành đúng hạn,356
-2023-11-21,DV3456,DonVi_6,Số lượng nhiệm vụ hoàn thành quá hạn,789
-2023-11-28,DV8901,DonVi_1,Số lượng nhiệm vụ hoàn thành đúng hạn,678
-2023-12-05,DV4567,DonVi_31,Số lượng nhiệm vụ trong hạn,543
-2023-12-12,DV1230,DonVi_40,Số lượng nhiệm vụ gần đến hạn,432
-2023-12-19,DV3333,DonVi_24,Số lượng nhiệm vụ hoàn thành quá hạn,298
-2023-12-26,DV2222,DonVi_41,Số lượng nhiệm vụ hoàn thành đúng hạn,789
-2024-01-02,DV1111,DonVi_35,Số lượng nhiệm vụ hoàn thành quá hạn,851
-2024-01-09,DV5430,DonVi_4,Số lượng nhiệm vụ gần đến hạn,678
-2024-01-16,DV9870,DonVi_19,Số lượng nhiệm vụ trong hạn,124
-2024-01-23,DV6780,DonVi_12,Số lượng nhiệm vụ quá hạn,245
-2024-01-30,DV8902,DonVi_43,Số lượng nhiệm vụ hoàn thành đúng hạn,312
-2024-02-06,DV1234,DonVi_7,Số lượng nhiệm vụ hoàn thành đúng hạn,493
-2024-02-13,DV2340,DonVi_30,Số lượng nhiệm vụ hoàn thành quá hạn,567
-2024-02-20,DV3450,DonVi_26,Số lượng nhiệm vụ gần đến hạn,390
-2024-02-27,DV4560,DonVi_18,Số lượng nhiệm vụ hoàn thành đúng hạn,560
-2024-03-05,DV5670,DonVi_44,Số lượng nhiệm vụ trong hạn,892
-2024-03-12,DV6781,DonVi_33,Số lượng nhiệm vụ hoàn thành đúng hạn,317
-2024-03-19,DV7891,DonVi_17,Số lượng nhiệm vụ hoàn thành quá hạn,454
-2024-03-26,DV8903,DonVi_32,Số lượng nhiệm vụ hoàn thành đúng hạn,927
-2024-04-02,DV9012,DonVi_25,Số lượng nhiệm vụ hoàn thành đúng hạn,638
-2024-04-09,DV1235,DonVi_27,Số lượng nhiệm vụ hoàn thành đúng hạn,721
-2024-04-16,DV2341,DonVi_13,Số lượng nhiệm vụ hoàn thành quá hạn,254
-2024-04-23,DV3457,DonVi_0,Số lượng nhiệm vụ gần đến hạn,387
-2024-04-30,DV4568,DonVi_39,Số lượng nhiệm vụ trong hạn,659
-2024-05-07,DV5679,DonVi_42,Số lượng nhiệm vụ hoàn thành đúng hạn,105
-2024-05-14,DV6782,DonVi_34,Số lượng nhiệm vụ gần đến hạn,845
-2024-05-21,DV7892,DonVi_14,Số lượng nhiệm vụ hoàn thành đúng hạn,513
-2024-05-28,DV8904,DonVi_21,Số lượng nhiệm vụ hoàn thành đúng hạn,332
-2024-06-04,DV9013,DonVi_37,Số lượng nhiệm vụ hoàn thành đúng hạn,764
-2024-06-11,DV1236,DonVi_3,Số lượng nhiệm vụ hoàn thành quá hạn,408
-2024-06-18,DV2342,DonVi_11,Số lượng nhiệm vụ gần đến hạn,516
-2024-06-25,DV3458,DonVi_9,Số lượng nhiệm vụ hoàn thành đúng hạn,700
-2024-07-02,DV4569,DonVi_5,Số lượng nhiệm vụ hoàn thành quá hạn,654
-2024-07-09,DV5671,DonVi_30,Số lượng nhiệm vụ hoàn thành đúng hạn,329
-2024-07-16,DV6783,DonVi_26,Số lượng nhiệm vụ hoàn thành đúng hạn,490
-2024-07-23,DV7893,DonVi_18,Số lượng nhiệm vụ hoàn thành đúng hạn,825
-2024-07-30,DV8905,DonVi_19,Số lượng nhiệm vụ hoàn thành đúng hạn,312
-2024-08-06,DV9014,DonVi_17,Số lượng nhiệm vụ hoàn thành đúng hạn,420
-2024-08-13,DV1237,DonVi_33,Số lượng nhiệm vụ hoàn thành đúng hạn,710
-2024-08-20,DV2343,DonVi_29,Số lượng nhiệm vụ hoàn thành đúng hạn,894
-2024-08-27,DV3459,DonVi_28,Số lượng nhiệm vụ hoàn thành đúng hạn,123
+2023-08-08,DV4570,Cục Di sản văn hóa,Số lượng nhiệm vụ hoàn thành đúng hạn,202
+2023-08-15,DV5140,Cục Du lịch Quốc gia Việt Nam,Số lượng nhiệm vụ hoàn thành quá hạn,435
+2023-08-22,DV3786,Cục Điện ảnh,Số lượng nhiệm vụ gần đến hạn,368
+2023-08-29,DV5238,Cục Di sản văn hoá,Số lượng nhiệm vụ trong hạn,627
+2023-09-05,DV3045,Cục Nghệ thuật biểu diễn ,Số lượng nhiệm vụ quá hạn,493
+2023-09-12,DV1234,Cục Thể dục thể thao Việt Nam,Số lượng nhiệm vụ hoàn thành đúng hạn,456
+2023-09-19,DV5432,Cục Di sản văn hóa,Số lượng nhiệm vụ quá hạn,218
+2023-09-26,DV6789,Cục Du lịch Quốc gia Việt Nam,Số lượng nhiệm vụ trong hạn,951
+2023-10-03,DV9876,Cục Điện ảnh,Số lượng nhiệm vụ trong hạn,226
+2023-10-10,DV4321,Cục Di sản văn hoá,Số lượng nhiệm vụ hoàn thành đúng hạn,451
+2023-10-17,DV6543,Cục Nghệ thuật biểu diễn ,Số lượng nhiệm vụ gần đến hạn,712
+2023-10-24,DV8765,Cục Thể dục thể thao Việt Nam,Số lượng nhiệm vụ quá hạn,193
+2023-10-31,DV5678,Cục Di sản văn hóa,Số lượng nhiệm vụ hoàn thành đúng hạn,521
+2023-11-07,DV2345,Cục Du lịch Quốc gia Việt Nam,Số lượng nhiệm vụ gần đến hạn,812
+2023-11-14,DV7890,Cục Điện ảnh,Số lượng nhiệm vụ hoàn thành đúng hạn,356
+2023-11-21,DV3456,Cục Di sản văn hoá,Số lượng nhiệm vụ hoàn thành quá hạn,789
+2023-11-28,DV8901,Cục Nghệ thuật biểu diễn ,Số lượng nhiệm vụ hoàn thành đúng hạn,678
+2023-12-05,DV4567,Cục Thể dục thể thao Việt Nam,Số lượng nhiệm vụ trong hạn,543
+2023-12-12,DV1230,Cục Di sản văn hóa,Số lượng nhiệm vụ gần đến hạn,432
+2023-12-19,DV3333,Cục Du lịch Quốc gia Việt Nam,Số lượng nhiệm vụ hoàn thành quá hạn,298
+2023-12-26,DV2222,Cục Điện ảnh,Số lượng nhiệm vụ hoàn thành đúng hạn,789
+2024-01-02,DV1111,Cục Di sản văn hoá,Số lượng nhiệm vụ hoàn thành quá hạn,851
+2024-01-09,DV5430,Cục Nghệ thuật biểu diễn ,Số lượng nhiệm vụ gần đến hạn,678
+2024-01-16,DV9870,Cục Thể dục thể thao Việt Nam,Số lượng nhiệm vụ trong hạn,124
+2024-01-23,DV6780,Cục Di sản văn hóa,Số lượng nhiệm vụ quá hạn,245
+2024-01-30,DV8902,Cục Du lịch Quốc gia Việt Nam,Số lượng nhiệm vụ hoàn thành đúng hạn,312
+2024-02-06,DV1234,Cục Điện ảnh,Số lượng nhiệm vụ hoàn thành đúng hạn,493
+2024-02-13,DV2340,Cục Di sản văn hoá,Số lượng nhiệm vụ hoàn thành quá hạn,567
+2024-02-20,DV3450,Cục Nghệ thuật biểu diễn ,Số lượng nhiệm vụ gần đến hạn,390
+2024-02-27,DV4560,Cục Thể dục thể thao Việt Nam,Số lượng nhiệm vụ hoàn thành đúng hạn,560
+2024-03-05,DV5670,Cục Di sản văn hóa,Số lượng nhiệm vụ trong hạn,892
+2024-03-12,DV6781,Cục Du lịch Quốc gia Việt Nam,Số lượng nhiệm vụ hoàn thành đúng hạn,317
+2024-03-19,DV7891,Cục Điện ảnh,Số lượng nhiệm vụ hoàn thành quá hạn,454
+2024-03-26,DV8903,Cục Di sản văn hoá,Số lượng nhiệm vụ hoàn thành đúng hạn,927
+2024-04-02,DV9012,Cục Nghệ thuật biểu diễn ,Số lượng nhiệm vụ hoàn thành đúng hạn,638
+2024-04-09,DV1235,Cục Thể dục thể thao Việt Nam,Số lượng nhiệm vụ hoàn thành đúng hạn,721
+2024-04-16,DV2341,Cục Di sản văn hóa,Số lượng nhiệm vụ hoàn thành quá hạn,254
+2024-04-23,DV3457,Cục Du lịch Quốc gia Việt Nam,Số lượng nhiệm vụ gần đến hạn,387
+2024-04-30,DV4568,Cục Điện ảnh,Số lượng nhiệm vụ trong hạn,659
+2024-05-07,DV5679,Cục Di sản văn hoá,Số lượng nhiệm vụ hoàn thành đúng hạn,105
+2024-05-14,DV6782,Cục Nghệ thuật biểu diễn ,Số lượng nhiệm vụ gần đến hạn,845
+2024-05-21,DV7892,Cục Thể dục thể thao Việt Nam,Số lượng nhiệm vụ hoàn thành đúng hạn,513
+2024-05-28,DV8904,Cục Di sản văn hóa,Số lượng nhiệm vụ hoàn thành đúng hạn,332
+2024-06-04,DV9013,Cục Du lịch Quốc gia Việt Nam,Số lượng nhiệm vụ hoàn thành đúng hạn,764
+2024-06-11,DV1236,Cục Điện ảnh,Số lượng nhiệm vụ hoàn thành quá hạn,408
+2024-06-18,DV2342,Cục Di sản văn hoá,Số lượng nhiệm vụ gần đến hạn,516
+2024-06-25,DV3458,Cục Nghệ thuật biểu diễn ,Số lượng nhiệm vụ hoàn thành đúng hạn,700
+2024-07-02,DV4569,Cục Thể dục thể thao Việt Nam,Số lượng nhiệm vụ hoàn thành quá hạn,654
+2024-07-09,DV5671,Cục Di sản văn hóa,Số lượng nhiệm vụ hoàn thành đúng hạn,329
+2024-07-16,DV6783,Cục Du lịch Quốc gia Việt Nam,Số lượng nhiệm vụ hoàn thành đúng hạn,490
+2024-07-23,DV7893,Cục Điện ảnh,Số lượng nhiệm vụ hoàn thành đúng hạn,825
+2024-07-30,DV8905,Cục Di sản văn hoá,Số lượng nhiệm vụ hoàn thành đúng hạn,312
+2024-08-06,DV9014,Cục Nghệ thuật biểu diễn ,Số lượng nhiệm vụ hoàn thành đúng hạn,420
+2024-08-13,DV1237,Cục Thể dục thể thao Việt Nam,Số lượng nhiệm vụ hoàn thành đúng hạn,710
+2024-08-20,DV2343,Cục Di sản văn hóa,Số lượng nhiệm vụ hoàn thành đúng hạn,894
+2024-08-27,DV3459,Cục Du lịch Quốc gia Việt Nam,Số lượng nhiệm vụ hoàn thành đúng hạn,123
