@@ -121,7 +121,7 @@ df_students['Average'] = (df_students['Math'] + df_students['Physics']) / 2
     
     df_students['Average'] = (df_students['Math'] + df_students['Physics']) / 2
     st.dataframe(df_students)
-    
+    df_students
     # c) Thêm sinh viên mới
     st.subheader("c) Thêm sinh viên mới (5 điểm)")
     
