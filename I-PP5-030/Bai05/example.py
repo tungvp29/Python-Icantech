@@ -23,13 +23,13 @@ st.write('Điểm thấp nhất ở các môn:')
 
 st.write(data_copy.min(numeric_only=True))
 
-# for label, content in data_copy.items():
-#     st.write(label)
-#     st.write(content)
+for label, content in data_copy.items():
+    st.write(label)
+    st.write(content)
 
-# for index, content in data_copy.iterrows():
-#     st.write(f'Dòng: {index}')
-#     st.write(content)
+for index, content in data_copy.iterrows():
+    st.write(f'Dòng: {index}')
+    st.write(content)
 
 # df2 = pd.DataFrame([{'col1': 10, 'col2': 20, 'col3': 30},
 #                     {'col1': 40, 'col2': 50, 'col3': 60}])
