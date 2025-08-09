@@ -80,7 +80,7 @@ Sử dụng DataFrame từ Bài 3 (sau khi đã làm sạch):
 ## HƯỚNG DẪN NỘP BÀI
 
 1. **File code**: Tạo file Python (.py) chứa toàn bộ code giải bài tự luận
-2. **Screenshots**: Chụp màn hình kết quả chạy chương trình
+2. **Triển khai**: Đưa chương trình lên streamlit.io, gửi lại link sau khi đã deploy
 
 **Lưu ý**: 
 - Code phải chạy được, có comment giải thích
