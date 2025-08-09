@@ -7,97 +7,7 @@
 ---
 
 ## PHẦN I: TRẮC NGHIỆM (30 điểm)
-*Chọn đáp án đúng nhất cho mỗi câu hỏi*
-
-### Câu 1 (3 điểm): Pandas Series và DataFrame
-Đoạn code nào sau đây tạo một Series từ dictionary?
-```python
-A. pd.Series({'a': 1, 'b': 2, 'c': 3})
-B. pd.DataFrame({'a': 1, 'b': 2, 'c': 3})
-C. pd.Series([1, 2, 3], index=['a', 'b', 'c'])
-D. Cả A và C đều đúng
-```
-
-### Câu 2 (3 điểm): Đọc file CSV
-Lệnh nào được sử dụng để đọc file CSV vào DataFrame?
-```python
-A. pd.read_file('data.csv')
-B. pd.load_csv('data.csv')
-C. pd.read_csv('data.csv')
-D. pd.import_csv('data.csv')
-```
-
-### Câu 3 (3 điểm): Streamlit Display
-Trong Streamlit, lệnh nào hiển thị DataFrame dưới dạng bảng tương tác?
-```python
-A. st.write(df)
-B. st.table(df)
-C. st.dataframe(df)
-D. st.show(df)
-```
-
-### Câu 4 (3 điểm): Biểu đồ Streamlit
-Lệnh nào tạo biểu đồ cột (bar chart) trong Streamlit?
-```python
-A. st.line_chart(data, x='col1', y='col2')
-B. st.bar_chart(data, x='col1', y='col2')
-C. st.area_chart(data, x='col1', y='col2')
-D. st.scatter_chart(data, x='col1', y='col2')
-```
-
-### Câu 5 (3 điểm): DataFrame Operations
-Lệnh nào thêm một dòng mới vào DataFrame?
-```python
-A. df.add_row(new_data)
-B. df.append(new_data, ignore_index=True)
-C. df._append(new_data, ignore_index=True)
-D. df.insert_row(new_data)
-```
-
-### Câu 6 (3 điểm): Data Cleaning
-Lệnh nào loại bỏ các dòng trùng lặp trong DataFrame?
-```python
-A. df.remove_duplicates()
-B. df.drop_duplicates()
-C. df.delete_duplicates()
-D. df.clean_duplicates()
-```
-
-### Câu 7 (3 điểm): Data Types
-Lệnh nào chuyển đổi kiểu dữ liệu của cột trong DataFrame?
-```python
-A. df.convert({'col': 'int'})
-B. df.astype({'col': 'int'})
-C. df.change_type({'col': 'int'})
-D. df.to_type({'col': 'int'})
-```
-
-### Câu 8 (3 điểm): Statistical Functions
-Lệnh nào tính toán thống kê mô tả cho DataFrame?
-```python
-A. df.statistics()
-B. df.summary()
-C. df.describe()
-D. df.info()
-```
-
-### Câu 9 (3 điểm): Data Filtering
-Cú pháp nào lọc dữ liệu trong DataFrame theo điều kiện?
-```python
-A. df.filter(df['col'] > 5)
-B. df.where(df['col'] > 5)
-C. df[df['col'] > 5]
-D. df.select(df['col'] > 5)
-```
-
-### Câu 10 (3 điểm): Missing Data
-Lệnh nào loại bỏ các dòng có giá trị NaN?
-```python
-A. df.remove_na()
-B. df.dropna()
-C. df.delete_na()
-D. df.clean_na()
-```
+*Học sinh hoàn thiện bài trắc nghiệm trên study.icantech.vn*
 
 ---
 
@@ -170,7 +80,7 @@ Sử dụng DataFrame từ Bài 3 (sau khi đã làm sạch):
 ## HƯỚNG DẪN NỘP BÀI
 
 1. **File code**: Tạo file Python (.py) chứa toàn bộ code giải bài tự luận
-2. **Screenshots**: Chụp màn hình kết quả chạy chương trình
+2. **Triển khai**: Đưa chương trình lên streamlit.io, gửi lại link sau khi đã deploy
 
 **Lưu ý**: 
 - Code phải chạy được, có comment giải thích
