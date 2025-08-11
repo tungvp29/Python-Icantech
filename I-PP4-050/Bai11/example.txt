@@ -1,0 +1,3 @@
+Phương thức liên lạc: Phone
+Độ tuổi: 35
+Đồng ý với các điều khoản và điều kiện: True
