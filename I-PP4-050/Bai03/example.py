@@ -12,6 +12,8 @@ class HinhTron:
     
     @dien_tich.setter                    #setter
     def dien_tich(self, dien_tich_moi):
+        if dien_tich_moi < 0:
+            raise ValueError("Diện tích không thể âm.")
         self.ban_kinh = (dien_tich_moi / self.pi) ** 0.5
     
     @dien_tich.deleter                   #deleter
