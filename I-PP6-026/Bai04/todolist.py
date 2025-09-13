@@ -16,10 +16,24 @@ DATA_FILE = "todos.json"
 
 def load_todos():
     """Tải dữ liệu todos từ file"""
+    try:
+        if os.path.exists(DATA_FILE):
+            with open(DATA_FILE, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                return data.get('todos', [])
+    except:
+        pass
     return []
 
 def load_groups():
     """Tải dữ liệu groups từ file"""
+    try:
+        if os.path.exists(DATA_FILE):
+            with open(DATA_FILE, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                return data.get('groups', ['Công việc', 'Cá nhân', 'Học tập', 'Khác'])
+    except:
+        pass
     return ['Công việc', 'Cá nhân', 'Học tập', 'Khác']
 
 # Khởi tạo session state
@@ -32,22 +46,89 @@ if 'editing_todo' not in st.session_state:
 
 def save_data():
     """Lưu dữ liệu vào file"""
-    pass
+    data = {
+        'todos': st.session_state.todos,
+        'groups': st.session_state.groups
+    }
+    with open(DATA_FILE, 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=2, default=str)
 
 def add_todo(title, description, group, due_date, due_time, location, priority, is_important, url, image_path):
-    pass
+    """Thêm todo mới"""
+    todo = {
+        'id': str(uuid.uuid4()),
+        'title': title,
+        'description': description,
+        'group': group,
+        'due_date': due_date.isoformat() if due_date else None,
+        'due_time': due_time.strftime('%H:%M') if due_time else None,
+        'location': location,
+        'priority': priority,
+        'is_important': is_important,
+        'url': url,
+        'image_path': image_path,
+        'completed': False,
+        'created_at': datetime.now().isoformat()
+    }
+    st.session_state.todos.append(todo)
+    save_data()
 
 def update_todo(todo_id, title, description, group, due_date, due_time, location, priority, is_important, url, image_path):
-    pass
+    """Cập nhật todo"""
+    for todo in st.session_state.todos:
+        if todo['id'] == todo_id:
+            todo.update({
+                'title': title,
+                'description': description,
+                'group': group,
+                'due_date': due_date.isoformat() if due_date else None,
+                'due_time': due_time.strftime('%H:%M') if due_time else None,
+                'location': location,
+                'priority': priority,
+                'is_important': is_important,
+                'url': url,
+                'image_path': image_path
+            })
+            break
+    save_data()
 
 def delete_todo(todo_id):
-    pass
+    """Xóa todo"""
+    st.session_state.todos = [todo for todo in st.session_state.todos if todo['id'] != todo_id]
+    save_data()
 
 def toggle_complete(todo_id):
-    pass
+    """Đánh dấu hoàn thành/chưa hoàn thành"""
+    for todo in st.session_state.todos:
+        if todo['id'] == todo_id:
+            todo['completed'] = not todo['completed']
+            break
+    save_data()
 
 def filter_todos(search_term="", selected_group="", filter_date=None, show_completed=True):
-    pass
+    """Lọc todos theo điều kiện"""
+    filtered = st.session_state.todos.copy()
+    
+    # Lọc theo từ khóa tìm kiếm
+    if search_term:
+        filtered = [todo for todo in filtered 
+                   if search_term.lower() in todo['title'].lower() 
+                   or search_term.lower() in todo['description'].lower()]
+    
+    # Lọc theo nhóm
+    if selected_group and selected_group != "Tất cả":
+        filtered = [todo for todo in filtered if todo['group'] == selected_group]
+    
+    # Lọc theo ngày
+    if filter_date:
+        filtered = [todo for todo in filtered 
+                   if todo['due_date'] and todo['due_date'] == filter_date.isoformat()]
+    
+    # Lọc theo trạng thái hoàn thành
+    if not show_completed:
+        filtered = [todo for todo in filtered if not todo['completed']]
+    
+    return filtered
 
 def display_todo_form(todo=None):
     """Hiển thị form thêm/sửa todo"""
@@ -107,6 +188,16 @@ def display_todo_form(todo=None):
             image_path = st.text_input("Đường dẫn hình ảnh", value=todo['image_path'] if is_edit else "")
         
         # Upload hình ảnh
+        uploaded_file = st.file_uploader("Hoặc upload hình ảnh", type=['png', 'jpg', 'jpeg', 'gif'])
+        if uploaded_file:
+            # Lưu file upload
+            upload_dir = "uploads"
+            if not os.path.exists(upload_dir):
+                os.makedirs(upload_dir)
+            file_path = os.path.join(upload_dir, uploaded_file.name)
+            with open(file_path, "wb") as f:
+                f.write(uploaded_file.getbuffer())
+            image_path = file_path
         
         # Nút submit
         col_submit1, col_submit2, col_submit3 = st.columns([2, 1, 1])
