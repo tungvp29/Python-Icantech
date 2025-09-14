@@ -10,7 +10,10 @@ class Singer:
         self.gioithieu = gioithieu
         self.anhDaiDien = anhDaiDien
         self.baiHat = []
-
+    def hienThiThongTin(self):
+        pass
+    def SingASong(self):
+        pass
 class Song:
     def __init__(self, ten, link, loai):
         self.ten = ten
@@ -25,17 +28,10 @@ caSi = Singer(
     anhDaiDien = 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/SOOBIN_HO%C3%80NG_S%C6%A0N_2.png/250px-SOOBIN_HO%C3%80NG_S%C6%A0N_2.png'
 )
 
-baiHat1 = Song('Em của ngày hôm qua', 'assets/audio/EmCuaNgayHomQua.mp3', 'audio')
-baiHat2 = Song('Bèo dạt mây trôi', 'assets/audio/BeoDatMayTroi.mp3', 'audio')
-caSi.baiHat.append(baiHat1)
-caSi.baiHat.append(baiHat2)
-# lstAudio = [baiHat1, baiHat2]
-
-baiHat3 = Song('Giá như', 'https://www.youtube.com/watch?v=UOL-e1LTDag', 'video')
-baiHat4 = Song('The playah', 'https://www.youtube.com/watch?v=d44UTUSTYKU', 'video')
-caSi.baiHat.append(baiHat3)
-caSi.baiHat.append(baiHat4)
-# lstVideo = [baiHat3, baiHat4]
+caSi.baiHat.append(Song('Em của ngày hôm qua', 'assets/audio/EmCuaNgayHomQua.mp3', 'audio'))
+caSi.baiHat.append(Song('Bèo dạt mây trôi', 'assets/audio/BeoDatMayTroi.mp3', 'audio'))
+caSi.baiHat.append(Song('Giá như', 'https://www.youtube.com/watch?v=UOL-e1LTDag', 'video'))
+caSi.baiHat.append(Song('The playah', 'https://www.youtube.com/watch?v=d44UTUSTYKU', 'video'))
 
 
 with st.sidebar:
