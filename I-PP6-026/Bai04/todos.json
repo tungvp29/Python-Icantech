@@ -2,14 +2,14 @@
   "todos": [
     {
       "id": "32b3f653-0c5c-4256-ae78-13c640db7328",
-      "title": "CV1",
-      "description": "CV1",
+      "title": "Tên công việc",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, \nsed do eiusmod tempor incididunt ut labore et dolore magna \naliqua. Ut enim ad minim veniam, quis nostrud exercitation ",
       "group": "Công việc",
       "due_date": "2025-09-13",
       "due_time": "10:15",
-      "location": "A",
+      "location": "Ba Đình",
       "priority": "Trung bình",
-      "is_important": false,
+      "is_important": true,
       "url": "",
       "image_path": "",
       "completed": false,

@@ -107,7 +107,17 @@ def display_todo_form(todo=None):
             image_path = st.text_input("Đường dẫn hình ảnh", value=todo['image_path'] if is_edit else "")
         
         # Upload hình ảnh
-        
+        uploaded_file = st.file_uploader("Hoặc upload hình ảnh", type=['png', 'jpg', 'jpeg', 'gif'])
+        if uploaded_file:
+            # Lưu file upload
+            upload_dir = "uploads"
+            if not os.path.exists(upload_dir):
+                os.makedirs(upload_dir)
+            file_path = os.path.join(upload_dir, uploaded_file.name)
+            with open(file_path, "wb") as f:
+                f.write(uploaded_file.getbuffer())
+            image_path = file_path
+            
         # Nút submit
         col_submit1, col_submit2, col_submit3 = st.columns([2, 1, 1])
         with col_submit1:

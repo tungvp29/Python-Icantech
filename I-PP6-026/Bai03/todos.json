@@ -2,24 +2,39 @@
   "todos": [
     {
       "id": "140e480e-2057-42e8-8c48-706fa0359825",
-      "title": "a",
-      "description": "a",
-      "group": "Công việc",
+      "title": "Tiêu đề",
+      "description": "Mô tả",
+      "group": "Nhóm Công việc",
       "due_date": "2025-09-02",
       "due_time": "09:00",
-      "location": "a",
+      "location": "Địa điểm",
       "priority": "Trung bình",
       "is_important": true,
-      "url": "aa",
-      "image_path": "aaa",
+      "url": "Đường dẫn",
+      "image_path": "Hình ảnh",
+      "completed": false,
+      "created_at": "2025-09-13T13:47:43.065272"
+    },
+    {
+      "id": "140e480e-2057-42e8-8c48-706fa0359825",
+      "title": "Tiêu đề",
+      "description": "Mô tả",
+      "group": "Nhóm Công việc",
+      "due_date": "2025-09-02",
+      "due_time": "09:00",
+      "location": "Địa điểm",
+      "priority": "Trung bình",
+      "is_important": true,
+      "url": "Đường dẫn",
+      "image_path": "Hình ảnh",
       "completed": false,
       "created_at": "2025-09-13T13:47:43.065272"
     }
   ],
   "groups": [
-    "Công việc",
-    "Cá nhân",
-    "Học tập",
-    "Khác"
+    "Nhóm Công việc",
+    "Nhóm Cá nhân",
+    "Nhóm Học tập",
+    "Nhóm Khác"
   ]
 }
