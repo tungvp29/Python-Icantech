@@ -55,6 +55,17 @@ lstAnimal.append(Animal(
     audio = 'cat-meow.wav',
     description = '''Cá là loài động vật có vú thuộc lớp Pisces trong ngành Chân khớp (Arthropoda). Chúng sống trong nước và có vây để bơi. Cá có nhiều loại khác nhau, từ cá nhỏ như cá vàng đến cá lớn như cá mập. Chúng ăn nhiều loại thức ăn khác nhau, bao gồm tảo, côn trùng và các loài cá khác. Cá đóng vai trò quan trọng trong hệ sinh thái bằng cách giúp duy trì cân bằng sinh học trong các hệ thống nước ngọt và nước mặn.'''
 ))
+lstAnimal.append(Animal(
+    name = 'Con ngựa',
+    img = 'https://static.toiimg.com/photo/msid-67586673/67586673.jpg?resizemode=4&width=400',
+    caption= 'Ảnh con ngựa',
+    video = 'https://www.youtube.com/watch?v=l6FN5RG14Lg',
+    audio = 'cat-meow.wav',
+    description = '''Ngựa là loài động vật có vú thuộc họ Ngựa (Equidae) trong bộ Gặm nhấm (Perissodactyla). Chúng có kích thước lớn, bốn chân dài và mạnh mẽ, và thường được sử dụng làm phương tiện di chuyển và công cụ lao động. Ngựa ăn cỏ và các loại thực vật khác. Chúng đã được thuần hóa từ hàng ngàn năm trước và đóng vai trò quan trọng trong lịch sử loài người.'''
+))
+
+lstCols = st.columns(len(lstAnimal))
+col6, col7 = st.columns([2, 1])
 
 def ShowAnimalInfo(animal):
     with col6:
@@ -66,9 +77,6 @@ def ShowAnimalInfo(animal):
         st.video(animal.video, format='video/mp4')
     with col7:
         st.image(animal.image, caption=animal.caption)
-
-lstCols = st.columns(len(lstAnimal))
-col6, col7 = st.columns([2, 1])
     
 for i in range(len(lstAnimal)):
     with lstCols[i % len(lstCols)]:
