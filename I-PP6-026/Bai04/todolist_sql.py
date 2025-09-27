@@ -15,6 +15,7 @@ st.set_page_config(
 # File lưu trữ dữ liệu
 DATA_FILE = "todos.json"
 
+#BACKEND
 def load_todos():
     """Tải dữ liệu todos từ file"""
     data = db.get_all_todos()
@@ -24,15 +25,11 @@ def load_todos():
     return []
 
 def load_groups():
-    """Tải dữ liệu groups từ file"""
-    try:
-        if os.path.exists(DATA_FILE):
-            with open(DATA_FILE, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-                return data.get('groups', ['Công việc', 'Cá nhân', 'Học tập', 'Khác'])
-    except:
-        pass
-    return ['Công việc', 'Cá nhân', 'Học tập', 'Khác']
+    """Tải danh sách nhóm từ database"""
+    groups = db.get_all_groups()
+    if groups:
+        return [g for g in groups]
+    return ["Công việc", "Học tập", "Cá nhân", "Khác"]
 
 # Khởi tạo session state
 if 'todos' not in st.session_state:
@@ -48,7 +45,7 @@ def save_data():
         'todos': st.session_state.todos,
         'groups': st.session_state.groups
     }
-    db.save_data(data)
+    # db.save_data(data)
 
 def add_todo(title, description, group, due_date, due_time, location, priority, is_important, url, image_path):
     """Thêm todo mới"""
@@ -68,39 +65,44 @@ def add_todo(title, description, group, due_date, due_time, location, priority, 
         'created_at': datetime.now().isoformat()
     }
     st.session_state.todos.append(todo)
-    save_data()
+    db.add_todo(title, description, group, due_date.isoformat() if due_date else None, due_time.strftime('%H:%M') if due_time else None, location, priority, is_important, url, image_path, False, datetime.now().isoformat())
 
 def update_todo(todo_id, title, description, group, due_date, due_time, location, priority, is_important, url, image_path):
     """Cập nhật todo"""
     for todo in st.session_state.todos:
-        if todo['id'] == todo_id:
-            todo.update({
-                'title': title,
-                'description': description,
-                'group': group,
-                'due_date': due_date.isoformat() if due_date else None,
-                'due_time': due_time.strftime('%H:%M') if due_time else None,
-                'location': location,
-                'priority': priority,
-                'is_important': is_important,
-                'url': url,
-                'image_path': image_path
-            })
+        if todo[0] == todo_id:
+            new_todo = list(todo)
+            new_todo[1] = title
+            new_todo[2] = description
+            new_todo[3] = group
+            new_todo[4] = due_date.isoformat() if due_date else None
+            new_todo[5] = due_time.strftime('%H:%M') if due_time else None
+            new_todo[6] = location
+            new_todo[7] = priority
+            new_todo[8] = is_important
+            new_todo[9] = url
+            new_todo[10] = image_path
+            st.session_state.todos[st.session_state.todos.index(todo)] = tuple(new_todo)
             break
-    save_data()
+    db.update_todo(todo_id, title, description, group, 
+                   due_date.isoformat() if due_date else None, 
+                   due_time.strftime('%H:%M') if due_time else None, 
+                   location, priority, is_important, url, image_path, False)
 
 def delete_todo(todo_id):
     """Xóa todo"""
-    st.session_state.todos = [todo for todo in st.session_state.todos if todo['id'] != todo_id]
-    save_data()
+    st.session_state.todos = [todo for todo in st.session_state.todos if todo[0] != todo_id]
+    db.delete_todo(todo_id)
 
 def toggle_complete(todo_id):
     """Đánh dấu hoàn thành/chưa hoàn thành"""
     for todo in st.session_state.todos:
         if todo[0] == todo_id:
-            todo[11] = not todo[11]
+            new_todo = list(todo)
+            new_todo[11] = not new_todo[11]
+            st.session_state.todos[st.session_state.todos.index(todo)] = tuple(new_todo)
             break
-    save_data()
+    db.update_todo_completion(todo_id, new_todo[11])
 
 def filter_todos(search_term="", selected_group="", filter_date=None, show_completed=True):
     """Lọc todos theo điều kiện"""
@@ -127,6 +129,7 @@ def filter_todos(search_term="", selected_group="", filter_date=None, show_compl
 
     return filtered
 
+#FRONTEND
 def display_todo_form(todo=None):
     """Hiển thị form thêm/sửa todo"""
     is_edit = todo is not None
@@ -155,7 +158,7 @@ def display_todo_form(todo=None):
                 new_group = st.text_input("Tên nhóm mới")
                 if st.form_submit_button("Thêm nhóm") and new_group and new_group not in st.session_state.groups:
                     st.session_state.groups.append(new_group)
-                    save_data()
+                    db.add_group(new_group)
                     st.session_state.show_add_group = False
                     st.rerun()
         
