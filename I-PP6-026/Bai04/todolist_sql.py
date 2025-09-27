@@ -65,7 +65,7 @@ def add_todo(title, description, group, due_date, due_time, location, priority, 
         'created_at': datetime.now().isoformat()
     }
     st.session_state.todos.append(todo)
-    db.add_todo(title, description, group, due_date.isoformat() if due_date else None, due_time.strftime('%H:%M') if due_time else None, location, priority, is_important, url, image_path, False, datetime.now().isoformat())
+    db.add_todos(title, description, group, due_date.isoformat() if due_date else None, due_time.strftime('%H:%M') if due_time else None, location, priority, is_important, url, image_path, False, datetime.now().isoformat())
 
 def update_todo(todo_id, title, description, group, due_date, due_time, location, priority, is_important, url, image_path):
     """Cập nhật todo"""
@@ -332,7 +332,8 @@ def main():
         # Thống kê
         st.header("📊 Thống kê")
         total_todos = len(st.session_state.todos)
-        completed_todos = len([t for t in st.session_state.todos if t[11]])
+        print(st.session_state.todos)
+        completed_todos = len([t for t in st.session_state.todos if t[11] == 1])
         important_todos = len([t for t in st.session_state.todos if t[8] and not t[11]])
         
         st.metric("Tổng công việc", total_todos)
