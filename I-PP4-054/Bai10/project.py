@@ -19,7 +19,7 @@ with st.form(key='thucdon'):
     options2 = st.selectbox('Chọn món ăn', main)
     options3 = st.multiselect('Chọn món tráng miệng', trangmieng)
     options4 = st.selectbox('Chọn đồ uống', douong)
-
+    st.multiselect()
     submited = st.form_submit_button('Đã điền xong')        #True/False
 
 # Thực đơn đã chọn
