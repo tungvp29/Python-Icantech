@@ -38,14 +38,6 @@ if 'groups' not in st.session_state:
 if 'editing_todo' not in st.session_state:
     st.session_state.editing_todo = None
 
-def save_data():
-    """Lưu dữ liệu vào file"""
-    data = {
-        'todos': st.session_state.todos,
-        'groups': st.session_state.groups
-    }
-    # db.save_data(data)
-
 def add_todo(title, description, group, due_date, due_time, location, priority, is_important, url, image_path):
     """Thêm todo mới"""
     todo = {
