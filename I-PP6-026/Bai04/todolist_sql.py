@@ -346,7 +346,7 @@ def main():
     # Nội dung chính
     # Form thêm/sửa todo
     if st.session_state.editing_todo:
-        editing_todo = next((t for t in st.session_state.todos if t[0] == st.session_state.editing_todo), None)
+        editing_todo = next((t for t in st.session_state.todos if t['id'] == st.session_state.editing_todo), None)
         if editing_todo:
             display_todo_form(editing_todo)
         else:
