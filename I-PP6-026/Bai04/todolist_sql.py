@@ -70,7 +70,8 @@ def update_todo(todo_id, title, description, group, due_date, due_time, location
     """Cập nhật todo"""
     for todo in st.session_state.todos:
         if todo['id'] == todo_id:
-            todo.update({
+            updated_todo = dict(todo)
+            updated_todo.update({
                 'title': title,
                 'description': description,
                 'group': group,
@@ -82,7 +83,7 @@ def update_todo(todo_id, title, description, group, due_date, due_time, location
                 'url': url,
                 'image_path': image_path
             })
-            st.session_state.todos[st.session_state.todos.index(todo)] = todo
+            st.session_state.todos[st.session_state.todos.index(todo)] = updated_todo
             break
     db.update_todo(todo_id, title, description, group, 
                    due_date.isoformat() if due_date else None, 
