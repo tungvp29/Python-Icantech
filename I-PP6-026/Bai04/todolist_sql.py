@@ -19,7 +19,6 @@ DATA_FILE = "todos.json"
 def load_todos():
     """Tải dữ liệu todos từ file"""
     data = db.get_all_todos()
-    print(data)
     if data:
         return data
     return []
@@ -70,19 +69,19 @@ def add_todo(title, description, group, due_date, due_time, location, priority, 
 def update_todo(todo_id, title, description, group, due_date, due_time, location, priority, is_important, url, image_path):
     """Cập nhật todo"""
     for todo in st.session_state.todos:
-        if todo[0] == todo_id:
-            new_todo = list(todo)
-            new_todo[1] = title
-            new_todo[2] = description
-            new_todo[3] = group
-            new_todo[4] = due_date.isoformat() if due_date else None
-            new_todo[5] = due_time.strftime('%H:%M') if due_time else None
-            new_todo[6] = location
-            new_todo[7] = priority
-            new_todo[8] = is_important
-            new_todo[9] = url
-            new_todo[10] = image_path
-            st.session_state.todos[st.session_state.todos.index(todo)] = tuple(new_todo)
+        if todo['id'] == todo_id:
+            new_todo = todo.copy()
+            new_todo['title'] = title
+            new_todo['description'] = description
+            new_todo['group'] = group
+            new_todo['due_date'] = due_date.isoformat() if due_date else None
+            new_todo['due_time'] = due_time.strftime('%H:%M') if due_time else None
+            new_todo['location'] = location
+            new_todo['priority'] = priority
+            new_todo['is_important'] = is_important
+            new_todo['url'] = url
+            new_todo['image_path'] = image_path
+            st.session_state.todos[st.session_state.todos.index(todo)] = new_todo
             break
     db.update_todo(todo_id, title, description, group, 
                    due_date.isoformat() if due_date else None, 
@@ -91,18 +90,18 @@ def update_todo(todo_id, title, description, group, due_date, due_time, location
 
 def delete_todo(todo_id):
     """Xóa todo"""
-    st.session_state.todos = [todo for todo in st.session_state.todos if todo[0] != todo_id]
+    st.session_state.todos = [todo for todo in st.session_state.todos if todo['id'] != todo_id]
     db.delete_todo(todo_id)
 
 def toggle_complete(todo_id):
     """Đánh dấu hoàn thành/chưa hoàn thành"""
     for todo in st.session_state.todos:
-        if todo[0] == todo_id:
-            new_todo = list(todo)
-            new_todo[11] = not new_todo[11]
-            st.session_state.todos[st.session_state.todos.index(todo)] = tuple(new_todo)
+        if todo['id'] == todo_id:
+            new_todo = todo.copy()
+            new_todo['completed'] = not new_todo['completed']
+            st.session_state.todos[st.session_state.todos.index(todo)] = new_todo
             break
-    db.update_todo_completion(todo_id, new_todo[11])
+    db.update_todo_completion(todo_id, new_todo['completed'])
 
 def filter_todos(search_term="", selected_group="", filter_date=None, show_completed=True):
     """Lọc todos theo điều kiện"""
@@ -111,21 +110,21 @@ def filter_todos(search_term="", selected_group="", filter_date=None, show_compl
     # Lọc theo từ khóa tìm kiếm
     if search_term:
         filtered = [todo for todo in filtered
-                   if search_term.lower() in todo[1].lower()
-                   or search_term.lower() in todo[2].lower()]
+                   if search_term.lower() in todo['title'].lower()
+                   or search_term.lower() in todo['description'].lower()]
 
     # Lọc theo nhóm
     if selected_group and selected_group != "Tất cả":
-        filtered = [todo for todo in filtered if todo[3] == selected_group]
-    
+        filtered = [todo for todo in filtered if todo['group'] == selected_group]
+
     # Lọc theo ngày
     if filter_date:
         filtered = [todo for todo in filtered
-                   if todo[4] and todo[4] == filter_date.isoformat()]
+                   if todo['due_date'] and todo['due_date'] == filter_date.isoformat()]
 
     # Lọc theo trạng thái hoàn thành
     if not show_completed:
-        filtered = [todo for todo in filtered if not todo[11]]
+        filtered = [todo for todo in filtered if not todo['completed']]
 
     return filtered
 
@@ -133,22 +132,22 @@ def filter_todos(search_term="", selected_group="", filter_date=None, show_compl
 def display_todo_form(todo=None):
     """Hiển thị form thêm/sửa todo"""
     is_edit = todo is not None
-    
-    with st.form(key=f"todo_form_{todo[0] if is_edit else 'new'}"):
+
+    with st.form(key=f"todo_form_{todo['id'] if is_edit else 'new'}"):
         st.subheader("✏️ Sửa công việc" if is_edit else "➕ Thêm công việc mới")
         
         col1, col2 = st.columns(2)
         
         with col1:
-            title = st.text_input("Tiêu đề*", value=todo[1] if is_edit else "")
-            description = st.text_area("Mô tả", value=todo[2] if is_edit else "")
-            
+            title = st.text_input("Tiêu đề*", value=todo['title'] if is_edit else "")
+            description = st.text_area("Mô tả", value=todo['description'] if is_edit else "")
+
             # Quản lý nhóm
             st.write("**Nhóm công việc**")
             col_group1, col_group2 = st.columns([3, 1])
             with col_group1:
                 group = st.selectbox("Chọn nhóm", options=st.session_state.groups, 
-                                   index=st.session_state.groups.index(todo[3]) if is_edit and todo[3] in st.session_state.groups else 0)
+                                   index=st.session_state.groups.index(todo['group']) if is_edit and todo['group'] in st.session_state.groups else 0)
             with col_group2:
                 if st.form_submit_button("➕ Nhóm mới"):
                     st.session_state.show_add_group = True
@@ -165,27 +164,27 @@ def display_todo_form(todo=None):
         with col2:
             # Ngày giờ
             due_date = st.date_input("Ngày hết hạn", 
-                                   value=datetime.fromisoformat(todo[4]).date() if is_edit and todo[4] else None)
+                                   value=datetime.fromisoformat(todo['due_date']).date() if is_edit and todo['due_date'] else None)
             due_time = st.time_input("Giờ hết hạn",
-                                   value=datetime.strptime(todo[5], '%H:%M').time() if is_edit and todo[5] else time(9, 0))
+                                   value=datetime.strptime(todo['due_time'], '%H:%M').time() if is_edit and todo['due_time'] else time(9, 0))
 
-            location = st.text_input("Địa điểm", value=todo[6] if is_edit else "")
+            location = st.text_input("Địa điểm", value=todo['location'] if is_edit else "")
 
             # Độ ưu tiên
             priority_options = ["Thấp", "Trung bình", "Cao", "Rất cao"]
             priority = st.selectbox("Độ ưu tiên", options=priority_options,
-                                  index=priority_options.index(todo[7]) if is_edit and todo[7] in priority_options else 1)
+                                  index=priority_options.index(todo['priority']) if is_edit and todo['priority'] in priority_options else 1)
 
             is_important = st.checkbox("⭐ Công việc quan trọng",
-                                     value=todo[8] if is_edit else False)
+                                     value=todo['is_important'] if is_edit else False)
 
         # Đường dẫn và hình ảnh
         st.write("**Tài liệu đính kèm**")
         col3, col4 = st.columns(2)
         with col3:
-            url = st.text_input("Đường dẫn URL", value=todo[9] if is_edit else "")
+            url = st.text_input("Đường dẫn URL", value=todo['url'] if is_edit else "")
         with col4:
-            image_path = st.text_input("Đường dẫn hình ảnh", value=todo[10] if is_edit else "")
+            image_path = st.text_input("Đường dẫn hình ảnh", value=todo['image_path'] if is_edit else "")
 
         # Upload hình ảnh
         uploaded_file = st.file_uploader("Hoặc upload hình ảnh", type=['png', 'jpg', 'jpeg', 'gif'])
@@ -236,12 +235,12 @@ def display_todo_card(todo):
     # CSS cho card
     card_style = f"""
     <div style="
-        background-color: {priority_colors.get(todo[7], '#f0f0f0')};
+        background-color: {priority_colors.get(todo['priority'], '#f0f0f0')};
         padding: 15px;
         border-radius: 10px;
-        border-left: 5px solid {'#ff6b6b' if todo[8] else '#4ecdc4'};
+        border-left: 5px solid {'#ff6b6b' if todo['is_important'] else '#4ecdc4'};
         margin-bottom: 10px;
-        {'opacity: 0.6;' if todo[11] else ''}
+        {'opacity: 0.6;' if todo['completed'] else ''}
     ">
     """
     
@@ -250,58 +249,58 @@ def display_todo_card(todo):
         
         with col1:
             # Checkbox hoàn thành
-            if st.checkbox("", value=todo[11], key=f"complete_{todo[0]}"):
-                if not todo[11]:
-                    toggle_complete(todo[0])
+            if st.checkbox("", value=todo['completed'], key=f"complete_{todo['id']}"):
+                if not todo['completed']:
+                    toggle_complete(todo['id'])
                     st.rerun()
-            elif todo[11]:
-                toggle_complete(todo[0])
+            elif todo['completed']:
+                toggle_complete(todo['id'])
                 st.rerun()
         
         with col2:
             # Thông tin todo
-            title_style = "text-decoration: line-through;" if todo[11] else ""
-            importance_icon = "⭐ " if todo[8] else ""
-            st.markdown(f"**{importance_icon}{todo[1]}**", unsafe_allow_html=True)
-            if todo[2]:
-                st.write(todo[2])
+            title_style = "text-decoration: line-through;" if todo['completed'] else ""
+            importance_icon = "⭐ " if todo['is_important'] else ""
+            st.markdown(f"**{importance_icon}{todo['title']}**", unsafe_allow_html=True)
+            if todo['description']:
+                st.write(todo['description'])
 
             # Thông tin chi tiết
             details = []
-            if todo[4]:
-                date_str = datetime.fromisoformat(todo[4]).strftime('%d/%m/%Y')
-                time_str = f" {todo[5]}" if todo[5] else ""
+            if todo['due_date']:
+                date_str = datetime.fromisoformat(todo['due_date']).strftime('%d/%m/%Y')
+                time_str = f" {todo['due_time']}" if todo['due_time'] else ""
                 details.append(f"📅 {date_str}{time_str}")
 
-            if todo[6]:
-                details.append(f"📍 {todo[6]}")
-            
-            details.append(f"🏷️ {todo[3]}")
-            details.append(f"🔥 {todo[7]}")
-            
+            if todo['location']:
+                details.append(f"📍 {todo['location']}")
+
+            details.append(f"🏷️ {todo['group']}")
+            details.append(f"🔥 {todo['priority']}")
+
             if details:
                 st.caption(" | ".join(details))
             
             # Hiển thị URL và hình ảnh
-            if todo[9]:
-                st.markdown(f"🔗 [Link]({todo[9]})")
+            if todo['url']:
+                st.markdown(f"🔗 [Link]({todo['url']})")
 
-            if todo[10] and os.path.exists(todo[10]):
+            if todo['image_path'] and os.path.exists(todo['image_path']):
                 try:
-                    st.image(todo[10], width=200)
+                    st.image(todo['image_path'], width=200)
                 except:
                     st.caption("❌ Không thể hiển thị hình ảnh")
         
         with col3:
             # Nút sửa
-            if st.button("✏️", key=f"edit_{todo[0]}", help="Sửa"):
-                st.session_state.editing_todo = todo[0]
+            if st.button("✏️", key=f"edit_{todo['id']}", help="Sửa"):
+                st.session_state.editing_todo = todo['id']
                 st.rerun()
         
         with col4:
             # Nút xóa
-            if st.button("🗑️", key=f"delete_{todo[0]}", help="Xóa"):
-                delete_todo(todo[0])
+            if st.button("🗑️", key=f"delete_{todo['id']}", help="Xóa"):
+                delete_todo(todo['id'])
                 st.success("🗑️ Đã xóa công việc!")
                 st.rerun()
 
@@ -333,8 +332,8 @@ def main():
         st.header("📊 Thống kê")
         total_todos = len(st.session_state.todos)
         print(st.session_state.todos)
-        completed_todos = len([t for t in st.session_state.todos if t[11] == 1])
-        important_todos = len([t for t in st.session_state.todos if t[8] and not t[11]])
+        completed_todos = len([t for t in st.session_state.todos if t['completed'] == 1])
+        important_todos = len([t for t in st.session_state.todos if t['is_important'] and not t['completed']])
         
         st.metric("Tổng công việc", total_todos)
         st.metric("Đã hoàn thành", completed_todos)
@@ -371,14 +370,14 @@ def main():
                                  ["Ngày tạo (mới nhất)", "Ngày hết hạn", "Độ ưu tiên", "Tên công việc"])
         
         if sort_option == "Ngày tạo (mới nhất)":
-            filtered_todos.sort(key=lambda x: x[12], reverse=True)
+            filtered_todos.sort(key=lambda x: x['created_at'], reverse=True)
         elif sort_option == "Ngày hết hạn":
-            filtered_todos.sort(key=lambda x: x[4] or '9999-12-31')
+            filtered_todos.sort(key=lambda x: x['due_date'] or '9999-12-31')
         elif sort_option == "Độ ưu tiên":
             priority_order = {"Rất cao": 0, "Cao": 1, "Trung bình": 2, "Thấp": 3}
-            filtered_todos.sort(key=lambda x: priority_order.get(x[7], 4))
+            filtered_todos.sort(key=lambda x: priority_order.get(x['priority'], 4))
         else:  # Tên công việc
-            filtered_todos.sort(key=lambda x: x[1].lower())
+            filtered_todos.sort(key=lambda x: x['title'].lower())
 
         # Hiển thị todos
         for todo in filtered_todos:

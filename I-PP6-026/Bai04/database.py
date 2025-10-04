@@ -2,6 +2,7 @@ import sqlite3 as sql
 import uuid
 
 conn = sql.connect('data.db', check_same_thread=False)
+conn.row_factory = sql.Row
 c = conn.cursor()
 
 def create_table():
