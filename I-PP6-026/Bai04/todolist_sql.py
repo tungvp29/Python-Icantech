@@ -70,18 +70,19 @@ def update_todo(todo_id, title, description, group, due_date, due_time, location
     """Cập nhật todo"""
     for todo in st.session_state.todos:
         if todo['id'] == todo_id:
-            new_todo = todo.copy()
-            new_todo['title'] = title
-            new_todo['description'] = description
-            new_todo['group'] = group
-            new_todo['due_date'] = due_date.isoformat() if due_date else None
-            new_todo['due_time'] = due_time.strftime('%H:%M') if due_time else None
-            new_todo['location'] = location
-            new_todo['priority'] = priority
-            new_todo['is_important'] = is_important
-            new_todo['url'] = url
-            new_todo['image_path'] = image_path
-            st.session_state.todos[st.session_state.todos.index(todo)] = new_todo
+            todo.update({
+                'title': title,
+                'description': description,
+                'group': group,
+                'due_date': due_date.isoformat() if due_date else None,
+                'due_time': due_time.strftime('%H:%M') if due_time else None,
+                'location': location,
+                'priority': priority,
+                'is_important': is_important,
+                'url': url,
+                'image_path': image_path
+            })
+            st.session_state.todos[st.session_state.todos.index(todo)] = todo
             break
     db.update_todo(todo_id, title, description, group, 
                    due_date.isoformat() if due_date else None, 
