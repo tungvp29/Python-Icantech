@@ -234,18 +234,6 @@ def display_todo_card(todo):
         "Rất cao": "#ffcccc"
     }
     
-    # CSS cho card
-    card_style = f"""
-    <div style="
-        background-color: {priority_colors.get(todo['priority'], '#f0f0f0')};
-        padding: 15px;
-        border-radius: 10px;
-        border-left: 5px solid {'#ff6b6b' if todo['is_important'] else '#4ecdc4'};
-        margin-bottom: 10px;
-        {'opacity: 0.6;' if todo['completed'] else ''}
-    ">
-    """
-    
     with st.container():
         col1, col2, col3, col4, col5 = st.columns([0.5, 4, 1, 1, 1])
         
@@ -263,7 +251,18 @@ def display_todo_card(todo):
             # Thông tin todo
             title_style = "text-decoration: line-through;" if todo['completed'] else ""
             importance_icon = "⭐ " if todo['is_important'] else ""
-            st.markdown(f"**{importance_icon}{todo['title']}**", unsafe_allow_html=True)
+
+            # CSS cho card
+            card_style = f"""
+            <div style="
+                background-color: {priority_colors.get(todo['priority'], '#f0f0f0')};
+                padding: 15px;
+                border-radius: 10px;
+                border-left: 5px solid {'#ff6b6b' if todo['is_important'] else '#4ecdc4'};
+                margin-bottom: 10px;
+                {'opacity: 0.6;' if todo['completed'] else ''}"><span style='{title_style}'>{importance_icon}{todo['title']}</span></div>
+            """
+            st.markdown(card_style, unsafe_allow_html=True)
             if todo['description']:
                 st.write(todo['description'])
 
