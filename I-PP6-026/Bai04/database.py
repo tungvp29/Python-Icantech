@@ -23,7 +23,7 @@ def create_table():
                   (name TEXT PRIMARY KEY)''')
     conn.commit()
 
-def add_todos(title, description, group, due_date, due_time, location, priority, is_important, url, image_path, completed, created_at):
+def add_todos(title, description, group, due_date, due_time, location, priority, is_important, url, image_path, completed = False, created_at = None):
     new_id = str(uuid.uuid4())
     c.execute('''INSERT INTO todos 
                     (id, title, description, "group", due_date, due_time, location, priority, is_important, url, image_path, completed, created_at)
