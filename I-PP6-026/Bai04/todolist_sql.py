@@ -212,7 +212,7 @@ def display_todo_form(todo=None):
         
         if submitted and title:
             if is_edit:
-                update_todo(todo[0], title, description, group, due_date, due_time, 
+                update_todo(todo['id'], title, description, group, due_date, due_time, 
                           location, priority, is_important, url, image_path)
                 st.session_state.editing_todo = None
                 st.success("✅ Cập nhật công việc thành công!")
