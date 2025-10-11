@@ -60,6 +60,7 @@ class Game:
         print(f"Điểm cao nhất: {self.max_score}")
 
 game1 = Game('xúc xắc')
+game1.score
 game1.play(5)
 game2 = Game('đồng xu')
 game2.play(3)

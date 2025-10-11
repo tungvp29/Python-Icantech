@@ -1,7 +1,8 @@
 class Student:
     name = ''
     scores = {}                 #{'Văn': 0, 'Toán': 0, 'Anh': 0}
-
+    school = ''
+    age = None
     def scoreAvarage(std1):
         sum(std1.scores.values())  # Tính tổng điểm các môn
         # return (std1.scores['Văn'] + std1.scores['Toán'] + std1.scores['Anh']) / 3

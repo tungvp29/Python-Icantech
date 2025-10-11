@@ -2,7 +2,7 @@
 #có 4 ô nhập liệu, lấy thông tin tên, ngày sinh, môn học, sở thích từ phía người dùng
 #kiểm tra người dùng đã nhập đủ 4 thông chưa
 #nếu đủ rồi thì in lại thông tin lên màn hình, chưa đủ thì thông báo người dùng cần nhập bổ sung
-
+print("This is a simple Streamlit app to demonstrate the code structure.")
 import streamlit as st
 
 st.title("Chương trình giới thiệu bản thân")
