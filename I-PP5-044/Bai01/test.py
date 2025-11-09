@@ -30,8 +30,8 @@ data = {
 df = pd.DataFrame(data)
 print(df)
 print("-----")
-# print(df.loc[0])  # Lấy dòng thứ 2 (index 1)
-# print(df.loc[[1,3]])  # Lấy dòng thứ 2 (index 1)
+print(df.loc[0])  # Lấy dòng thứ 2 (index 1)
+print(df.loc[[1,3]])  # Lấy dòng thứ 2 (index 1)
 # pd.options.display.max_rows = 7
 df2 = pd.read_csv('data.csv')
 # print("-----")

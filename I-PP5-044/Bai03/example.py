@@ -22,7 +22,6 @@ st.vega_lite_chart(data, {
         'y': {'field': 'IMDB Rating', 'type': 'quantitative'}
     }
 })
-
 st.vega_lite_chart(data, {
     'layer': [
         #Lớp bản đồ đầu tiên
