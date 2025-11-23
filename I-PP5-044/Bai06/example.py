@@ -16,6 +16,8 @@ dataNA = data.dropna(subset=['race/ethnicity','gender'])
 st.write(f'Tổng số dòng sau khi loại bỏ các giá trị None: {dataNA.shape[0]}') # dòng, cột
 st.dataframe(dataNA)
 
+st.dataframe(dataNA['math score'].mode())
+
 
 st.subheader('Bảng dữ liệu data5.6_2.csv')
 st.dataframe(data2)
