@@ -1,0 +1,6 @@
+Col1,Col2,Col3
+1.0,A,True
+2.0,,False
+,C,False
+4.0,D,
+5.0,E,True

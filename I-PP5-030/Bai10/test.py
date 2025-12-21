@@ -255,7 +255,7 @@ while status:
       
       # Thu nhỏ frame để tiết kiệm không gian màn hình
       height, width = frame.shape[:2]
-      new_width = 320  # Thu nhỏ xuống 320px
+      new_width = 640  # Thu nhỏ xuống 640px
       new_height = int(height * new_width / width)
       frame_small = cv2.resize(frame, (new_width, new_height))
       
