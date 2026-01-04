@@ -1,4 +1,4 @@
-import speech_recognition as sr
+import speech_recognition as sr     #SpeechRecognition
 import pyttsx3
 import time
 
@@ -30,7 +30,9 @@ class SpeechRecognitionSystem:
         # Ưu tiên tìm giọng nói tiếng Việt (Linh)
         vietnamese_voice = None
         for voice in voices:
-            if 'vi-VN' in voice.id or 'Linh' in voice.name:
+            print(voice.id, voice.name)
+            if 'it-IT' in voice.id or 'Alice' in voice.name:
+            # if 'vi-VN' in voice.id or 'Linh' in voice.name:
                 vietnamese_voice = voice
                 break
         
@@ -233,7 +235,7 @@ def demo_basic_functions():
     
     for text in sample_texts:
         speech_system.text_to_speech(text)
-        time.sleep(1)
+        time.sleep(2)
     
     print("\n2. Demo nhận diện âm thanh:")
     print("Bạn có muốn thử nhận diện âm thanh không? (y/n)")
