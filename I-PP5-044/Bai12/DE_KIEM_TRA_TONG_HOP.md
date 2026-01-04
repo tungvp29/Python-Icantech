@@ -6,12 +6,12 @@
 
 ---
 
-## PHẦN I: TRẮC NGHIỆM (30 điểm)
+## PHẦN I: TRẮC NGHIỆM (20 điểm)
 *Học sinh hoàn thiện bài trắc nghiệm trên study.icantech.vn*
 
 ---
 
-## PHẦN II: TỰ LUẬN (70 điểm)
+## PHẦN II: TỰ LUẬN (80 điểm)
 
 ### Bài 1 (20 điểm): Tạo và thao tác DataFrame
 Viết code Python thực hiện các yêu cầu sau:
