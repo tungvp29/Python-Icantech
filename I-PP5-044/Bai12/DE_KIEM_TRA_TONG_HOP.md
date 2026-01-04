@@ -35,7 +35,7 @@ Tạo ứng dụng Streamlit với các chức năng:
 
 **c) (5 điểm)** Tạo biểu đồ cột (bar chart) hiển thị điểm Math của các sinh viên
 
-### Bài 3 (20 điểm): Data Cleaning và Analysis
+### Bài 3 (30 điểm): Data Cleaning và Analysis
 Cho DataFrame students với dữ liệu:
 ```python
 import pandas as pd
@@ -49,16 +49,16 @@ students = pd.DataFrame({
 })
 ```
 
-**a) (8 điểm)** Làm sạch dữ liệu:
+**a) (10 điểm)** Làm sạch dữ liệu:
 - Loại bỏ các dòng có giá trị NaN
 - Loại bỏ các dòng trùng lặp
 
-**b) (6 điểm)** Tính toán thống kê:
+**b) (10 điểm)** Tính toán thống kê:
 - Điểm Math cao nhất và thấp nhất
 - Điểm Physics trung bình
 - Số lượng sinh viên có điểm Math >= 8.0
 
-**c) (6 điểm)** Lọc và hiển thị:
+**c) (10 điểm)** Lọc và hiển thị:
 - Danh sách sinh viên có điểm Physics > 8.0
 - Thông tin sinh viên có điểm Math cao nhất
 
