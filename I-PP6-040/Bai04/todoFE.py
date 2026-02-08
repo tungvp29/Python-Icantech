@@ -7,7 +7,7 @@ from todoBE import load_todos
 st.set_page_config(
     page_title="Todo List Manager",
     page_icon="",
-    layout="centered"
+    layout="wide"
 )
 
 is_edit = False
@@ -49,7 +49,7 @@ def display_todo_form(todo = None):
         with col4:
             image_path = st.text_input('Hình ảnh', value=todo['image_path'] if is_edit else '')
 
-        uploaded_file = st.file_uploader("Upload hình ảnh", type=['png', 'jpg', 'jpeg'])
+        uploaded_file = st.file_uploader("Upload hình ảnh", type=['png', 'jpg', 'jpeg', 'pdf'])
         if uploaded_file:
             #Lưu file đã upload
             upload_dir = 'uploads'
