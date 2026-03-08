@@ -3,7 +3,7 @@ import uuid
 import datetime
 
 # File lưu trữ dữ liệu
-DATA_FILE = "database/data.db"
+DATA_FILE = "data.db"
 
 conn = sql.connect(DATA_FILE, check_same_thread=False)
 conn.row_factory = sql.Row
