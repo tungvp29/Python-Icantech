@@ -150,9 +150,11 @@ def display_todo_card(todo):
             if st.checkbox("", value=todo['completed'], key=f"complete_{todo['id']}"):
                 if not todo['completed']:
                     toggle_complete(todo['id'], True)
+                    st.session_state.todos = load_todos()
                     st.rerun()
             elif todo['completed']:
                 toggle_complete(todo['id'], False)
+                st.session_state.todos = load_todos()
                 st.rerun()
         
         with col2:
