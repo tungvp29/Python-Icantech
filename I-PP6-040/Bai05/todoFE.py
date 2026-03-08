@@ -200,6 +200,7 @@ def display_todo_card(todo):
             # Nút xóa
             if st.button("🗑️", key=f"delete_{todo['id']}", help="Xóa"):
                 delete_todo(todo['id'])
+                st.session_state.todos = load_todos()
                 st.success("🗑️ Đã xóa công việc!")
                 st.rerun()
 
