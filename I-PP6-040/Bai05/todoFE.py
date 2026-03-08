@@ -109,10 +109,12 @@ def display_todo_form(todo=None):
                 update_todo(todo['id'], title, description, group, due_date, due_time, 
                           location, priority, is_important, url, image_path)
                 st.session_state.editing_todo = None
+                st.session_state.todos = load_todos()
                 st.success("✅ Cập nhật công việc thành công!")
             else:
                 add_todo(title, description, group, due_date, due_time, 
                         location, priority, is_important, url, image_path)
+                st.session_state.todos = load_todos()
                 st.success("✅ Thêm công việc thành công!")
             st.rerun()
         elif submitted and not title:
